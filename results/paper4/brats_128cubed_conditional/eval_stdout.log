@@ -1,0 +1,56 @@
+Device: mps
+VQ-GAN loaded from results/paper4/brats_128cubed_conditional/phase1_shared.pt
+Loaded 300 real conditional volumes with class counts: [150, 150]
+  Real class 0: diversity baseline (n=32) = 0.0458
+  Real class 1: diversity baseline (n=32) = 0.0445
+
+----- Evaluating consistency@50 | class 0 -----
+    seed=42: SSIM=0.8031  div=0.0087  (0.973 s/vol)
+    seed=123: SSIM=0.8038  div=0.0084  (0.953 s/vol)
+    seed=456: SSIM=0.8040  div=0.0086  (0.954 s/vol)
+    seed=789: SSIM=0.8043  div=0.0083  (0.968 s/vol)
+    seed=1337: SSIM=0.8034  div=0.0085  (0.960 s/vol)
+  SUMMARY consistency class 0: SSIM=0.8037  div=0.0085  (18.5% of real)
+
+----- Evaluating consistency@50 | class 1 -----
+    seed=42: SSIM=0.8079  div=0.0087  (0.955 s/vol)
+    seed=123: SSIM=0.8075  div=0.0086  (0.963 s/vol)
+    seed=456: SSIM=0.8092  div=0.0088  (0.947 s/vol)
+    seed=789: SSIM=0.8091  div=0.0084  (0.947 s/vol)
+    seed=1337: SSIM=0.8079  div=0.0084  (0.952 s/vol)
+  SUMMARY consistency class 1: SSIM=0.8083  div=0.0086  (19.3% of real)
+
+----- Evaluating shortcut@50 | class 0 -----
+    seed=42: SSIM=0.8000  div=0.0364  (0.946 s/vol)
+    seed=123: SSIM=0.7983  div=0.0365  (0.945 s/vol)
+    seed=456: SSIM=0.7975  div=0.0381  (0.944 s/vol)
+    seed=789: SSIM=0.7998  div=0.0357  (0.944 s/vol)
+    seed=1337: SSIM=0.7967  div=0.0385  (0.944 s/vol)
+  SUMMARY shortcut class 0: SSIM=0.7985  div=0.0370  (80.8% of real)
+
+----- Evaluating shortcut@50 | class 1 -----
+    seed=42: SSIM=0.8015  div=0.0366  (0.945 s/vol)
+    seed=123: SSIM=0.8010  div=0.0366  (0.944 s/vol)
+    seed=456: SSIM=0.8008  div=0.0380  (0.944 s/vol)
+    seed=789: SSIM=0.8013  div=0.0352  (0.945 s/vol)
+    seed=1337: SSIM=0.8001  div=0.0381  (0.944 s/vol)
+  SUMMARY shortcut class 1: SSIM=0.8009  div=0.0369  (82.9% of real)
+
+Saved results/paper4/brats_128cubed_conditional/paper_eval_5seed_conditional/eval_results_128_conditional_5seed.json
+
+================================================================================
+  Conditional 128³ summary (NFE = 50, n = 32/class/seed × 5 seeds)
+================================================================================
+       Method  Class             SSIM        Diversity   %Real  CV (std/mean)
+  consistency      0      0.804±0.000    0.0085±0.0002     19%         0.0196
+  consistency      1      0.808±0.001    0.0086±0.0002     19%         0.0211
+     shortcut      0      0.798±0.001    0.0370±0.0012     81%         0.0319
+     shortcut      1      0.801±0.001    0.0369±0.0012     83%         0.0331
+
+What to look for:
+  * Consistency class 0 vs class 1 diversity should be SYMMETRIC
+    (within seed std). Asymmetry would falsify P4.
+  * Shortcut diversity should be MUCH higher than Consistency diversity
+    at every class. This replicates the §5.4 ordering.
+  * Consistency cross-seed std on diversity should be near-zero
+    (10^-4 to 10^-3 range), reproducing the collapse signature.

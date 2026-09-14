@@ -1,0 +1,214 @@
+{
+ "timestamp": "2026-07-14T19:15:11.245097+00:00",
+ "purpose": "128-cubed manifold metrics in a task-independent feature space. Closes the gap where the paper's own recommendation (measure Recall outside the generator) was demonstrated only at 64-cubed.",
+ "resolution": 128,
+ "nfe": 50,
+ "seeds": [
+  42
+ ],
+ "n_samples_per_seed": 16,
+ "feature_space": "MONAI BasicUNet 128-cubed tumour-segmentation teacher; encoder bottleneck average-pooled to 4^3 -> 2,048 dims, matching the 64-cubed protocol exactly",
+ "teacher_path": "results/paper4/brats_128cubed_conditional/e7_teacher_128/teacher_best.pt",
+ "real_diversity": 0.05156743775458179,
+ "pr_definitions": "Kynkaanniemi et al. 2019 P/R at k=3; Naeem et al. 2020 D/C at k=5.",
+ "results": {
+  "consistency": {
+   "precision": {
+    "mean": 0.5625,
+    "std": NaN,
+    "seeds": [
+     0.5625
+    ]
+   },
+   "recall": {
+    "mean": 0.0078125,
+    "std": NaN,
+    "seeds": [
+     0.0078125
+    ]
+   },
+   "density": {
+    "mean": 0.275,
+    "std": NaN,
+    "seeds": [
+     0.275
+    ]
+   },
+   "coverage": {
+    "mean": 0.0703125,
+    "std": NaN,
+    "seeds": [
+     0.0703125
+    ]
+   },
+   "vq_precision": {
+    "mean": 1.0,
+    "std": NaN,
+    "seeds": [
+     1.0
+    ]
+   },
+   "vq_recall": {
+    "mean": 0.0,
+    "std": NaN,
+    "seeds": [
+     0.0
+    ]
+   },
+   "diversity": {
+    "mean": 0.007725291117094457,
+    "std": NaN,
+    "seeds": [
+     0.007725291117094457
+    ]
+   },
+   "frd": {
+    "mean": 3.3006925225866035,
+    "std": NaN,
+    "seeds": [
+     3.3006925225866035
+    ]
+   },
+   "latent_fid": {
+    "mean": 335.0578679673013,
+    "std": NaN,
+    "seeds": [
+     335.0578679673013
+    ]
+   },
+   "diversity_pct_real": 14.98094815930245
+  },
+  "shortcut": {
+   "precision": {
+    "mean": 0.8125,
+    "std": NaN,
+    "seeds": [
+     0.8125
+    ]
+   },
+   "recall": {
+    "mean": 0.84375,
+    "std": NaN,
+    "seeds": [
+     0.84375
+    ]
+   },
+   "density": {
+    "mean": 0.7375,
+    "std": NaN,
+    "seeds": [
+     0.7375
+    ]
+   },
+   "coverage": {
+    "mean": 0.3046875,
+    "std": NaN,
+    "seeds": [
+     0.3046875
+    ]
+   },
+   "vq_precision": {
+    "mean": 0.9375,
+    "std": NaN,
+    "seeds": [
+     0.9375
+    ]
+   },
+   "vq_recall": {
+    "mean": 0.4375,
+    "std": NaN,
+    "seeds": [
+     0.4375
+    ]
+   },
+   "diversity": {
+    "mean": 0.03475030437111855,
+    "std": NaN,
+    "seeds": [
+     0.03475030437111855
+    ]
+   },
+   "frd": {
+    "mean": 3.444354088132342,
+    "std": NaN,
+    "seeds": [
+     3.444354088132342
+    ]
+   },
+   "latent_fid": {
+    "mean": 210.29678525920013,
+    "std": NaN,
+    "seeds": [
+     210.29678525920013
+    ]
+   },
+   "diversity_pct_real": 67.38807643788928
+  },
+  "fm": {
+   "precision": {
+    "mean": 0.8125,
+    "std": NaN,
+    "seeds": [
+     0.8125
+    ]
+   },
+   "recall": {
+    "mean": 0.7734375,
+    "std": NaN,
+    "seeds": [
+     0.7734375
+    ]
+   },
+   "density": {
+    "mean": 0.875,
+    "std": NaN,
+    "seeds": [
+     0.875
+    ]
+   },
+   "coverage": {
+    "mean": 0.3359375,
+    "std": NaN,
+    "seeds": [
+     0.3359375
+    ]
+   },
+   "vq_precision": {
+    "mean": 0.9375,
+    "std": NaN,
+    "seeds": [
+     0.9375
+    ]
+   },
+   "vq_recall": {
+    "mean": 0.2421875,
+    "std": NaN,
+    "seeds": [
+     0.2421875
+    ]
+   },
+   "diversity": {
+    "mean": 0.034426761651411654,
+    "std": NaN,
+    "seeds": [
+     0.034426761651411654
+    ]
+   },
+   "frd": {
+    "mean": 3.0834869135835765,
+    "std": NaN,
+    "seeds": [
+     3.0834869135835765
+    ]
+   },
+   "latent_fid": {
+    "mean": 206.85532859982712,
+    "std": NaN,
+    "seeds": [
+     206.85532859982712
+    ]
+   },
+   "diversity_pct_real": 66.76065973115529
+  }
+ }
+}

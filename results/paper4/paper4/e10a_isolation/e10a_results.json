@@ -1,0 +1,162 @@
+{
+ "unique_500": {
+  "n_unique": 500,
+  "n_total": 500,
+  "dices": [
+   0.7911529851456484,
+   0.7835853750507037,
+   0.7825586281716823
+  ],
+  "mean": 0.7857656627893448,
+  "std": 0.0038324042859490715,
+  "tumor_detection_rate": 1.0,
+  "diversity_l1": 0.03663570433855057
+ },
+ "unique_100": {
+  "n_unique": 100,
+  "n_total": 500,
+  "dices": [
+   0.7872810586666067,
+   0.7859636168926954,
+   0.7937708831081788
+  ],
+  "mean": 0.7890051862224937,
+  "std": 0.0034125077105244647,
+  "tumor_detection_rate": 1.0,
+  "diversity_l1": 0.03691326454281807
+ },
+ "unique_25": {
+  "n_unique": 25,
+  "n_total": 500,
+  "dices": [
+   0.7896444894373417,
+   0.7890451510747274,
+   0.7909288530548414
+  ],
+  "mean": 0.7898728311889701,
+  "std": 0.0007857854898651538,
+  "tumor_detection_rate": 1.0,
+  "diversity_l1": 0.03523090481758118
+ },
+ "unique_10": {
+  "n_unique": 10,
+  "n_total": 500,
+  "dices": [
+   0.7813956377406915,
+   0.7671261634677649,
+   0.7669666854043802
+  ],
+  "mean": 0.7718294955376122,
+  "std": 0.00676459734206095,
+  "tumor_detection_rate": 1.0,
+  "diversity_l1": 0.025611847639083862
+ },
+ "real_only": {
+  "n_unique": 0,
+  "n_total": 0,
+  "dices": [
+   0.7701984265198311,
+   0.7572940764327843,
+   0.7649147429813942
+  ],
+  "mean": 0.7641357486446698,
+  "std": 0.005296897640742301
+ },
+ "statistical_tests": [
+  {
+   "comparison": "unique_25 vs unique_10",
+   "t_statistic": -3.7469629160808626,
+   "p_value": 0.01999973037636434,
+   "dice_diff": 0.01804333565135796
+  },
+  {
+   "comparison": "unique_100 vs unique_25",
+   "t_statistic": 0.3504003807663652,
+   "p_value": 0.743712192189488,
+   "dice_diff": -0.0008676449664763997
+  },
+  {
+   "comparison": "unique_500 vs unique_100",
+   "t_statistic": 0.8927910286375874,
+   "p_value": 0.42242676746790603,
+   "dice_diff": -0.0032395234331489275
+  },
+  {
+   "comparison": "unique_500 vs unique_10 (extremes)",
+   "t_statistic": -2.534957095649504,
+   "p_value": 0.06432467694526253,
+   "dice_diff": 0.013936167251732634
+  }
+ ],
+ "design": {
+  "approach": "graduated dose-response: same model, same quality, varying unique count",
+  "diversity_levels": [
+   500,
+   100,
+   25,
+   10
+  ],
+  "total_per_condition": 500,
+  "real_subset_size": 18,
+  "selection_method": "uniform random subsample, resampled with replacement to n_gen"
+ },
+ "statistical_tests_paired": [
+  {
+   "comparison": "unique_25 vs unique_10",
+   "test": "paired t-test on per-seed Dice (scipy.stats.ttest_rel)",
+   "t_statistic": -3.65795272974186,
+   "p_value": 0.06728020564371189,
+   "dice_diff": 0.01804333565135796
+  },
+  {
+   "comparison": "unique_100 vs unique_25",
+   "test": "paired t-test on per-seed Dice (scipy.stats.ttest_rel)",
+   "t_statistic": 0.4648798218123575,
+   "p_value": 0.6877196043672102,
+   "dice_diff": -0.0008676449664763997
+  },
+  {
+   "comparison": "unique_500 vs unique_100",
+   "test": "paired t-test on per-seed Dice (scipy.stats.ttest_rel)",
+   "t_statistic": 0.7403489723608082,
+   "p_value": 0.5362041810021636,
+   "dice_diff": -0.0032395234331489275
+  },
+  {
+   "comparison": "unique_500 vs unique_10 (extremes)",
+   "test": "paired t-test on per-seed Dice (scipy.stats.ttest_rel)",
+   "t_statistic": -6.622533652579023,
+   "p_value": 0.022049560376598366,
+   "dice_diff": 0.013936167251732634
+  },
+  {
+   "comparison": "unique_10 vs real_only",
+   "test": "paired t-test on per-seed Dice (scipy.stats.ttest_rel)",
+   "t_statistic": -2.7011759445833703,
+   "p_value": 0.11407571715588477,
+   "dice_diff": 0.0076937468929423325
+  },
+  {
+   "comparison": "unique_25 vs real_only",
+   "test": "paired t-test on per-seed Dice (scipy.stats.ttest_rel)",
+   "t_statistic": -7.23999010039568,
+   "p_value": 0.018548479077910986,
+   "dice_diff": 0.025737082544300294
+  },
+  {
+   "comparison": "unique_100 vs real_only",
+   "test": "paired t-test on per-seed Dice (scipy.stats.ttest_rel)",
+   "t_statistic": -6.38697291613816,
+   "p_value": 0.023647683359128088,
+   "dice_diff": 0.024869437577823894
+  },
+  {
+   "comparison": "unique_500 vs real_only",
+   "test": "paired t-test on per-seed Dice (scipy.stats.ttest_rel)",
+   "t_statistic": -8.586608454745107,
+   "p_value": 0.013293188043392447,
+   "dice_diff": 0.021629914144674967
+  }
+ ],
+ "statistical_tests_paired_note": "Corrected to ttest_rel (paired) on seed-matched dices per the v7.1 peer review. The original statistical_tests key used ttest_ind (independent), which was inappropriate for this design because the same three seeds {42, 43, 44} train every condition. See Paper2 \u00a75.5 v7.2 for the corrected interpretation."
+}

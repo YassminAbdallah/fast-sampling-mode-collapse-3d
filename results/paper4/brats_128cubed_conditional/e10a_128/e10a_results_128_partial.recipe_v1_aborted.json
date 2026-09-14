@@ -1,0 +1,46 @@
+{
+  "unique_500": {
+    "n_unique": 500,
+    "n_total": 500,
+    "dices": [
+      0.7779775078097979,
+      null,
+      0.7757935747504234
+    ],
+    "mean": 0.7768855412801107,
+    "std": 0.0010919665296872383,
+    "tumor_detection_rate": 1.0,
+    "diversity_l1": 0.036507681012153625,
+    "wall_s_per_seed": [
+      23965.773527145386,
+      20527.378895044327,
+      23547.024353027344
+    ],
+    "seed_statuses": [
+      "ok",
+      "nan_aborted",
+      "ok"
+    ]
+  },
+  "unique_100": {
+    "n_unique": 100,
+    "n_total": 500,
+    "dices": [
+      null,
+      null,
+      null
+    ],
+    "wall_s_per_seed": [
+      3704.418319940567,
+      null,
+      null
+    ],
+    "seed_statuses": [
+      "nan_aborted",
+      "pending",
+      "pending"
+    ],
+    "diversity_l1": 0.028712406754493713,
+    "tumor_detection_rate": 1.0
+  }
+}

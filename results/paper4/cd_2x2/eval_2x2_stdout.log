@@ -1,0 +1,127 @@
+Device: mps
+Loaded 300 real volumes
+Real data diversity (n=64): 0.0451
+
+[REUSE] Cell A: EMA + L2 (original CD)
+  results/paper4/brats_benchmark_20260324_154926/100pct_180vol/paper_eval_5seed/eval_results_5seed.json
+  real_diversity in existing JSON: 0.0449 (this run: 0.0451)
+
+[REUSE] Cell B: no-EMA + Pseudo-Huber (Improved CD)
+  results/paper4/improved_cd_brats/paper_eval_5seed/eval_results_5seed.json
+  real_diversity in existing JSON: 0.0451 (this run: 0.0451)
+
+[FRESH] Cell C: EMA + Pseudo-Huber (NEW)
+  ----- @ NFE=1 -----
+    seed=42: SSIM=0.7971  div=0.0214
+    seed=123: SSIM=0.7978  div=0.0212
+    seed=456: SSIM=0.7981  div=0.0212
+    seed=789: SSIM=0.7990  div=0.0215
+    seed=1337: SSIM=0.7967  div=0.0214
+    SUMMARY @ NFE=1: SSIM=0.7977  div=0.0213  (47.3% of real)
+  ----- @ NFE=4 -----
+    seed=42: SSIM=0.7998  div=0.0221
+    seed=123: SSIM=0.7970  div=0.0226
+    seed=456: SSIM=0.7974  div=0.0229
+    seed=789: SSIM=0.7998  div=0.0228
+    seed=1337: SSIM=0.7999  div=0.0222
+    SUMMARY @ NFE=4: SSIM=0.7988  div=0.0225  (49.9% of real)
+  ----- @ NFE=16 -----
+    seed=42: SSIM=0.7951  div=0.0248
+    seed=123: SSIM=0.7983  div=0.0246
+    seed=456: SSIM=0.7967  div=0.0261
+    seed=789: SSIM=0.7988  div=0.0252
+    seed=1337: SSIM=0.7974  div=0.0247
+    SUMMARY @ NFE=16: SSIM=0.7973  div=0.0251  (55.6% of real)
+  ----- @ NFE=50 -----
+    seed=42: SSIM=0.7945  div=0.0250
+    seed=123: SSIM=0.7941  div=0.0212
+    seed=456: SSIM=0.7953  div=0.0238
+    seed=789: SSIM=0.7949  div=0.0253
+    seed=1337: SSIM=0.7930  div=0.0235
+    SUMMARY @ NFE=50: SSIM=0.7943  div=0.0238  (52.6% of real)
+  Saved results/paper4/cd_2x2/ema_pseudohuber/eval_results_5seed.json
+
+[FRESH] Cell D: no-EMA + L2 (NEW)
+  ----- @ NFE=1 -----
+    seed=42: SSIM=0.0374  div=0.0168
+    seed=123: SSIM=0.0376  div=0.0173
+    seed=456: SSIM=0.0374  div=0.0173
+    seed=789: SSIM=0.0370  div=0.0168
+    seed=1337: SSIM=0.0374  div=0.0175
+    SUMMARY @ NFE=1: SSIM=0.0373  div=0.0172  (38.0% of real)
+  ----- @ NFE=4 -----
+    seed=42: SSIM=0.0383  div=0.0095
+    seed=123: SSIM=0.0385  div=0.0095
+    seed=456: SSIM=0.0386  div=0.0094
+    seed=789: SSIM=0.0383  div=0.0095
+    seed=1337: SSIM=0.0382  div=0.0096
+    SUMMARY @ NFE=4: SSIM=0.0384  div=0.0095  (21.1% of real)
+  ----- @ NFE=16 -----
+    seed=42: SSIM=0.0385  div=0.0063
+    seed=123: SSIM=0.0385  div=0.0063
+    seed=456: SSIM=0.0386  div=0.0063
+    seed=789: SSIM=0.0384  div=0.0062
+    seed=1337: SSIM=0.0385  div=0.0063
+    SUMMARY @ NFE=16: SSIM=0.0385  div=0.0063  (13.9% of real)
+  ----- @ NFE=50 -----
+    seed=42: SSIM=0.0386  div=0.0046
+    seed=123: SSIM=0.0386  div=0.0046
+    seed=456: SSIM=0.0385  div=0.0046
+    seed=789: SSIM=0.0384  div=0.0045
+    seed=1337: SSIM=0.0385  div=0.0047
+    SUMMARY @ NFE=50: SSIM=0.0385  div=0.0046  (10.2% of real)
+  Saved results/paper4/cd_2x2/noema_l2/eval_results_5seed.json
+
+[LOSS-TRAJ] Cell A: EMA + L2 (original CD): unknown
+    reason = no_training_log_provided
+
+[LOSS-TRAJ] Cell B: no-EMA + Pseudo-Huber (Improved CD): loss_stalled
+    first_loss = 41.36681155628628
+    final_loss = 43.33392062717014
+    max_loss = 79.13892211914063
+    progress_ratio_final_over_first = 1.0475528327390493
+    spike_ratio_max_over_first = 1.9131018113750258
+    n_epochs = 80
+
+[LOSS-TRAJ] Cell C: EMA + Pseudo-Huber (NEW): loss_descent_smooth
+    first_loss = 3.0179314030541313
+    final_loss = 0.028704690602090625
+    max_loss = 3.0179314030541313
+    progress_ratio_final_over_first = 0.009511379408107694
+    spike_ratio_max_over_first = 1.0
+    n_epochs = 80
+
+[LOSS-TRAJ] Cell D: no-EMA + L2 (NEW): loss_spiked_stalled
+    first_loss = 0.5020383330165512
+    final_loss = 0.513444267378913
+    max_loss = 1.6752017498016358
+    progress_ratio_final_over_first = 1.0227192499302356
+    spike_ratio_max_over_first = 3.3368004784336014
+    n_epochs = 80
+
+======================================================================
+## 2×2 EMA × Loss factorial — quality, diversity, training status at NFE=4
+
+| Cell | EMA | Loss | SSIM ↑ | PSNR ↑ | Diversity ↑ | % of real div | Loss-traj | Training status |
+|------|-----|------|--------|--------|-------------|---------------|-----------|-----------------|
+| A_ema_l2 | yes | L2 | 0.8010 | 19.50 | 0.0147 | 32.7% | unknown | **✓ trained** |
+| B_noema_pseudohuber | no | Pseudo-Huber | 0.6896 | 13.63 | 0.0015 | 3.4% | loss_stalled | **✓ trained** |
+| C_ema_pseudohuber | yes | Pseudo-Huber | 0.7988 | 19.34 | 0.0225 | 49.9% | loss_descent_smooth | **✓ trained** |
+| D_noema_l2 | no | L2 | 0.0384 | 1.18 | 0.0095 | 21.1% | loss_spiked_stalled | **✗ failed** |
+
+**Loss-trajectory flag** (descriptive only, from training_log.json loss curve):
+- `loss_descent_smooth` — monotone descent, final < 0.8× first, no spike
+- `loss_spiked` — loss went up >2× first at some point
+- `loss_stalled` — final ≈ first (final > 0.8× first)
+- `loss_spiked_stalled` — both shape problems present
+- `unknown` — no training log on disk for this cell
+
+**Training status** (the verdict — combines sample SSIM with the loss flag):
+- `trained` — SSIM @ NFE=4 ≥ 0.55 (the model produces brain-like samples)
+- `failed`  — SSIM @ NFE=4 < 0.55 (samples are degenerate; training broke)
+
+**Interpretation rule:** the 2×2 diversity comparison is only valid across cells with `training_status = trained`. A `failed` cell tells you the {EMA, loss} combination is unstable to train — not whether the *objective* causes collapse. The loss-trajectory flag is a descriptive diagnostic of the training curve only; some valid baselines (e.g. Cell B) have a `loss_spiked_stalled` curve and still produce usable samples.
+
+Saved:
+  results/paper4/cd_2x2/factorial_2x2_table.json
+  results/paper4/cd_2x2/factorial_2x2_table.md

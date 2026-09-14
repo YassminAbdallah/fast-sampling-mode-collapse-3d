@@ -1,0 +1,51 @@
+{
+  "design": {
+    "upenn_vols": "data/upenn_volumes_64.pt",
+    "upenn_segs": "data/upenn_seg_64.pt",
+    "gen_dir": "results/paper4/brats_benchmark_20260324_154926",
+    "output_dir": "results/paper4/cross_dataset_upenn",
+    "num_classes_gen": 2,
+    "n_synth": 500,
+    "real_frac": 0.1,
+    "n_seeds": 3,
+    "teacher_iters": 3000,
+    "seg_iters": 2000,
+    "device": null
+  },
+  "n_upenn_total": 92,
+  "n_upenn_train": 55,
+  "n_upenn_val": 18,
+  "n_upenn_test": 19,
+  "n_real_used": 5,
+  "teacher_test_dice": 0.8339029142731115,
+  "conditions": {
+    "real_only": {
+      "dices": [
+        0.6724026461965159,
+        0.7264014898162139,
+        0.7025325737501446
+      ],
+      "mean": 0.7004455699209581,
+      "std": 0.027059849718788692
+    },
+    "real_classical_aug": {
+      "dices": [
+        0.6987022114427466,
+        0.660886178283315,
+        0.7542949350256669
+      ],
+      "mean": 0.7046277749172428,
+      "std": 0.04698545717459481
+    },
+    "real_shortcut50": {
+      "dices": [
+        0.7131196152614919,
+        0.7619952826123488,
+        0.6800898897804712
+      ],
+      "mean": 0.7184015958847706,
+      "std": 0.04120737595643
+    }
+  },
+  "timestamp": "2026-05-19T11:12:51.850517Z"
+}

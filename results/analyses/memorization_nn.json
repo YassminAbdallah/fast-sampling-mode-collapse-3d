@@ -1,0 +1,44 @@
+{
+  "shortcut_50": {
+    "label": "Shortcut FM @ NFE=50",
+    "n_synthetic": 500,
+    "n_real_train": 180,
+    "nn_distance_min": 13.650657653808594,
+    "nn_distance_p5": 14.286294889450073,
+    "nn_distance_median": 15.388339042663574,
+    "nn_distance_mean": 15.490593936920167,
+    "nn_distance_p95": 16.913369560241698,
+    "nn_distance_max": 18.570650100708008,
+    "nn_distance_std": 0.8240564157677277,
+    "n_below_real_to_real_min": 0,
+    "n_below_real_to_real_p5": 0,
+    "distinct_real_neighbors_used": 108,
+    "top_5_real_neighbors_share_of_pool": 0.192
+  },
+  "consistency_4": {
+    "label": "Consistency Distillation @ NFE=4",
+    "n_synthetic": 500,
+    "n_real_train": 180,
+    "nn_distance_min": 12.594456672668457,
+    "nn_distance_p5": 13.057541179656983,
+    "nn_distance_median": 13.707868576049805,
+    "nn_distance_mean": 13.688813199996948,
+    "nn_distance_p95": 14.24446153640747,
+    "nn_distance_max": 14.89651870727539,
+    "nn_distance_std": 0.3733388157456522,
+    "n_below_real_to_real_min": 20,
+    "n_below_real_to_real_p5": 76,
+    "distinct_real_neighbors_used": 15,
+    "top_5_real_neighbors_share_of_pool": 0.82
+  },
+  "_real_to_real_baseline": {
+    "n_real": 180,
+    "min": 13.014816284179688,
+    "p5": 13.327509880065918,
+    "median": 15.038260459899902,
+    "mean": 15.245574606789482,
+    "p95": 18.08994283676147,
+    "max": 19.37067985534668,
+    "std": 1.4365421542744172
+  }
+}

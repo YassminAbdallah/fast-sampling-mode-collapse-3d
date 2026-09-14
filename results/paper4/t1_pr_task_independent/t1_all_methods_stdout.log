@@ -1,0 +1,293 @@
+Device: mps
+Loading task-independent feature extractor (teacher segmenter) on CPU:
+  results/paper4/paper4/e7_teacher/teacher_best.pt
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+  Teacher loaded (CPU); encoder path will be traversed manually.
+
+============================================================
+  BRATS × consistency @ NFE=50
+============================================================
+    [step 1/2] Loading VQ-GAN + consistency generator
+    [step 1/2] Loading real dataset brats_preprocessed_64.pt
+      seed=  42: sampled 64 real + 64 gen
+      seed= 123: sampled 64 real + 64 gen
+      seed= 456: sampled 64 real + 64 gen
+      seed= 789: sampled 64 real + 64 gen
+      seed=1337: sampled 64 real + 64 gen
+    [step 2/2] Extracting task-independent features (CPU teacher)
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.395, 5.37]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.323, 5.03]
+      seed=  42: P=1.000  R=0.0000  D=0.656  C=0.109
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.35, 5.43]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.323, 5.03]
+      seed= 123: P=1.000  R=0.0000  D=1.106  C=0.141
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.399, 5.46]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.324, 5.02]
+      seed= 456: P=1.000  R=0.0000  D=1.341  C=0.156
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.374, 5.46]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.324, 5.03]
+      seed= 789: P=1.000  R=0.0000  D=0.997  C=0.141
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.374, 5.37]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.323, 5.02]
+      seed=1337: P=1.000  R=0.0000  D=0.775  C=0.078
+
+============================================================
+  BRATS × shortcut @ NFE=50
+============================================================
+    [step 1/2] Loading VQ-GAN + shortcut generator
+    [step 1/2] Loading real dataset brats_preprocessed_64.pt
+      seed=  42: sampled 64 real + 64 gen
+      seed= 123: sampled 64 real + 64 gen
+      seed= 456: sampled 64 real + 64 gen
+      seed= 789: sampled 64 real + 64 gen
+      seed=1337: sampled 64 real + 64 gen
+    [step 2/2] Extracting task-independent features (CPU teacher)
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.395, 5.37]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.368, 5.52]
+      seed=  42: P=0.734  R=0.5000  D=1.166  C=0.938
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.35, 5.43]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.373, 5.37]
+      seed= 123: P=0.875  R=0.6406  D=1.150  C=0.984
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.399, 5.46]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.37, 5.52]
+      seed= 456: P=0.844  R=0.6562  D=1.250  C=0.922
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.374, 5.46]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.345, 5.44]
+      seed= 789: P=0.906  R=0.5625  D=1.394  C=0.953
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.374, 5.37]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.356, 5.26]
+      seed=1337: P=0.859  R=0.6250  D=1.150  C=0.922
+
+============================================================
+  BRATS × fm @ NFE=50
+============================================================
+    [step 1/2] Loading VQ-GAN + fm generator
+    [step 1/2] Loading real dataset brats_preprocessed_64.pt
+      seed=  42: sampled 64 real + 64 gen
+      seed= 123: sampled 64 real + 64 gen
+      seed= 456: sampled 64 real + 64 gen
+      seed= 789: sampled 64 real + 64 gen
+      seed=1337: sampled 64 real + 64 gen
+    [step 2/2] Extracting task-independent features (CPU teacher)
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.395, 5.37]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.386, 5.48]
+      seed=  42: P=0.828  R=0.5469  D=1.272  C=0.953
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.35, 5.43]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.39, 5.52]
+      seed= 123: P=0.828  R=0.6094  D=1.119  C=0.969
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.399, 5.46]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.379, 5.48]
+      seed= 456: P=0.875  R=0.4062  D=1.172  C=0.969
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.374, 5.46]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.353, 5.44]
+      seed= 789: P=0.859  R=0.6094  D=1.353  C=0.984
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.374, 5.37]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.36, 5.5]
+      seed=1337: P=0.891  R=0.7188  D=1.137  C=0.969
+
+============================================================
+  BRATS × rectified @ NFE=10
+============================================================
+    [step 1/2] Loading VQ-GAN + rectified generator
+    [step 1/2] Loading real dataset brats_preprocessed_64.pt
+      seed=  42: sampled 64 real + 64 gen
+      seed= 123: sampled 64 real + 64 gen
+      seed= 456: sampled 64 real + 64 gen
+      seed= 789: sampled 64 real + 64 gen
+      seed=1337: sampled 64 real + 64 gen
+    [step 2/2] Extracting task-independent features (CPU teacher)
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.395, 5.37]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.38, 5.49]
+      seed=  42: P=0.906  R=0.4844  D=1.266  C=0.969
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.35, 5.43]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.374, 5.53]
+      seed= 123: P=0.797  R=0.5938  D=1.131  C=0.984
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.399, 5.46]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.372, 5.6]
+      seed= 456: P=0.797  R=0.5000  D=1.116  C=0.844
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.374, 5.46]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.348, 5.45]
+      seed= 789: P=0.906  R=0.4844  D=1.406  C=0.922
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.374, 5.37]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.351, 5.47]
+      seed=1337: P=0.875  R=0.5469  D=1.153  C=0.969
+
+============================================================
+  BRATS × ddpm @ NFE=1000
+============================================================
+    [step 1/2] Loading VQ-GAN + ddpm generator
+    [step 1/2] Loading real dataset brats_preprocessed_64.pt
+      seed=  42: sampled 64 real + 64 gen
+      seed= 123: sampled 64 real + 64 gen
+      seed= 456: sampled 64 real + 64 gen
+      seed= 789: sampled 64 real + 64 gen
+      seed=1337: sampled 64 real + 64 gen
+    [step 2/2] Extracting task-independent features (CPU teacher)
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.395, 5.37]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.35, 5.36]
+      seed=  42: P=0.828  R=0.6875  D=1.156  C=0.953
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.35, 5.43]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.357, 5.38]
+      seed= 123: P=0.828  R=0.6094  D=1.163  C=0.969
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.399, 5.46]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.346, 5.39]
+      seed= 456: P=0.859  R=0.4375  D=1.322  C=0.891
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.374, 5.46]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.351, 5.44]
+      seed= 789: P=0.859  R=0.6406  D=1.353  C=1.000
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.374, 5.37]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.351, 5.37]
+      seed=1337: P=0.875  R=0.6250  D=1.372  C=0.953
+
+============================================================
+  IXI × consistency @ NFE=50
+============================================================
+    [step 1/2] Loading VQ-GAN + consistency generator
+    [step 1/2] Loading real dataset ixi_preprocessed_64.pt
+      seed=  42: sampled 64 real + 64 gen
+      seed= 123: sampled 64 real + 64 gen
+      seed= 456: sampled 64 real + 64 gen
+      seed= 789: sampled 64 real + 64 gen
+      seed=1337: sampled 64 real + 64 gen
+    [step 2/2] Extracting task-independent features (CPU teacher)
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.386, 5.53]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.334, 4.67]
+      seed=  42: P=0.984  R=0.0000  D=1.266  C=0.188
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.376, 5.53]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.334, 4.69]
+      seed= 123: P=0.984  R=0.0000  D=1.041  C=0.188
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.374, 5.59]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.333, 4.68]
+      seed= 456: P=1.000  R=0.0000  D=1.159  C=0.156
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.386, 5.4]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.334, 4.68]
+      seed= 789: P=0.984  R=0.0000  D=1.522  C=0.234
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.383, 5.41]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.335, 4.67]
+      seed=1337: P=1.000  R=0.0000  D=1.812  C=0.250
+
+============================================================
+  IXI × shortcut @ NFE=50
+============================================================
+    [step 1/2] Loading VQ-GAN + shortcut generator
+    [step 1/2] Loading real dataset ixi_preprocessed_64.pt
+      seed=  42: sampled 64 real + 64 gen
+      seed= 123: sampled 64 real + 64 gen
+      seed= 456: sampled 64 real + 64 gen
+      seed= 789: sampled 64 real + 64 gen
+      seed=1337: sampled 64 real + 64 gen
+    [step 2/2] Extracting task-independent features (CPU teacher)
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.386, 5.53]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.371, 5.25]
+      seed=  42: P=0.875  R=0.7812  D=1.175  C=0.922
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.376, 5.53]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.369, 5.46]
+      seed= 123: P=0.734  R=0.6406  D=1.003  C=0.984
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.374, 5.59]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.364, 5.36]
+      seed= 456: P=0.828  R=0.6875  D=0.978  C=0.844
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.386, 5.4]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.372, 5.63]
+      seed= 789: P=0.781  R=0.6250  D=1.100  C=0.969
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.383, 5.41]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.369, 5.45]
+      seed=1337: P=0.828  R=0.9062  D=1.050  C=0.984
+
+============================================================
+  IXI × fm @ NFE=50
+============================================================
+    [step 1/2] Loading VQ-GAN + fm generator
+    [step 1/2] Loading real dataset ixi_preprocessed_64.pt
+      seed=  42: sampled 64 real + 64 gen
+      seed= 123: sampled 64 real + 64 gen
+      seed= 456: sampled 64 real + 64 gen
+      seed= 789: sampled 64 real + 64 gen
+      seed=1337: sampled 64 real + 64 gen
+    [step 2/2] Extracting task-independent features (CPU teacher)
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.386, 5.53]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.365, 5.41]
+      seed=  42: P=0.859  R=0.7188  D=1.116  C=1.000
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.376, 5.53]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.384, 5.31]
+      seed= 123: P=0.844  R=0.7031  D=1.044  C=1.000
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.374, 5.59]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.371, 5.19]
+      seed= 456: P=0.875  R=0.6406  D=0.975  C=0.828
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.386, 5.4]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.377, 5.75]
+      seed= 789: P=0.891  R=0.5625  D=1.075  C=0.969
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.383, 5.41]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.364, 5.32]
+      seed=1337: P=0.938  R=0.8906  D=1.100  C=1.000
+
+============================================================
+  IXI × rectified @ NFE=10
+============================================================
+    [step 1/2] Loading VQ-GAN + rectified generator
+    [step 1/2] Loading real dataset ixi_preprocessed_64.pt
+      seed=  42: sampled 64 real + 64 gen
+      seed= 123: sampled 64 real + 64 gen
+      seed= 456: sampled 64 real + 64 gen
+      seed= 789: sampled 64 real + 64 gen
+      seed=1337: sampled 64 real + 64 gen
+    [step 2/2] Extracting task-independent features (CPU teacher)
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.386, 5.53]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.364, 5.27]
+      seed=  42: P=0.906  R=0.7500  D=1.191  C=0.938
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.376, 5.53]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.366, 5.22]
+      seed= 123: P=0.891  R=0.6094  D=1.066  C=0.891
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.374, 5.59]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.364, 5.18]
+      seed= 456: P=0.828  R=0.7188  D=1.031  C=0.844
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.386, 5.4]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.371, 5.67]
+      seed= 789: P=0.766  R=0.7031  D=1.075  C=1.000
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.383, 5.41]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.365, 5.33]
+      seed=1337: P=0.891  R=0.6094  D=1.116  C=0.953
+
+============================================================
+  IXI × ddpm @ NFE=1000
+============================================================
+    [step 1/2] Loading VQ-GAN + ddpm generator
+    [step 1/2] Loading real dataset ixi_preprocessed_64.pt
+      seed=  42: sampled 64 real + 64 gen
+      seed= 123: sampled 64 real + 64 gen
+      seed= 456: sampled 64 real + 64 gen
+      seed= 789: sampled 64 real + 64 gen
+      seed=1337: sampled 64 real + 64 gen
+    [step 2/2] Extracting task-independent features (CPU teacher)
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.386, 5.53]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.37, 5.5]
+      seed=  42: P=0.844  R=0.7656  D=1.081  C=0.969
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.376, 5.53]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.365, 5.18]
+      seed= 123: P=0.781  R=0.7656  D=1.047  C=0.984
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.374, 5.59]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.366, 5.43]
+      seed= 456: P=0.766  R=0.7500  D=0.847  C=0.953
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.386, 5.4]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.372, 5.59]
+      seed= 789: P=0.750  R=0.6719  D=0.978  C=0.953
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.383, 5.41]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.377, 5.63]
+      seed=1337: P=0.891  R=0.7188  D=1.050  C=1.000
+
+Saved results/paper4/t1_pr_task_independent/t1_pr_results_all_methods.json
+
+============================================================
+  T1 headline (task-independent teacher-encoder features)
+============================================================
+  dataset  method              Precision           Recall          Density         Coverage
+  ------------------------------------------------------------------------------------
+  brats    consistency    1.000 ± 0.000   0.0000 ± 0.0000    0.975 ± 0.271    0.125 ± 0.031
+  brats    shortcut       0.844 ± 0.065   0.5969 ± 0.0648    1.222 ± 0.105    0.944 ± 0.026
+  brats    fm             0.856 ± 0.028   0.5781 ± 0.1143    1.211 ± 0.099    0.969 ± 0.011
+  brats    rectified      0.856 ± 0.056   0.5219 ± 0.0476    1.214 ± 0.122    0.938 ± 0.057
+  brats    ddpm           0.850 ± 0.021   0.6000 ± 0.0954    1.273 ± 0.105    0.953 ± 0.040
+  ixi      consistency    0.991 ± 0.009   0.0000 ± 0.0000    1.360 ± 0.309    0.203 ± 0.038
+  ixi      shortcut       0.809 ± 0.053   0.7281 ± 0.1167    1.061 ± 0.079    0.941 ± 0.060
+  ixi      fm             0.881 ± 0.036   0.7031 ± 0.1215    1.062 ± 0.056    0.959 ± 0.075
+  ixi      rectified      0.856 ± 0.059   0.6781 ± 0.0650    1.096 ± 0.061    0.925 ± 0.060
+  ixi      ddpm           0.806 ± 0.059   0.7344 ± 0.0398    1.001 ± 0.094    0.972 ± 0.020

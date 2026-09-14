@@ -1,0 +1,65 @@
+Device: mps
+
+Loading 64-cubed conditional data from data/brats_conditional_64.pt...
+  Real subset (10%): 18 volumes  |  Test: 60 volumes
+
+Loading 64-cubed teacher from results/paper4/paper4/e7_teacher/teacher_best.pt...
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+
+[Step 1] Generating 500 volumes from Shortcut@50 (class 1)...
+Traceback (most recent call last):
+  File "tier_c/e10a_64_5seed/e10a_64_5seed.py", line 662, in <module>
+    main()
+    ~~~~^^
+  File "tier_c/e10a_64_5seed/e10a_64_5seed.py", line 446, in main
+    _, dec, _, unet, _ = load_shortcut_64(bench_dir, dev)
+                         ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "tier_c/e10a_64_5seed/e10a_64_5seed.py", line 191, in load_shortcut_64
+    unet.load_state_dict(state["unet"] if "unet" in state else state)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 2638, in load_state_dict
+    raise RuntimeError(
+    ...<3 lines>...
+    )
+RuntimeError: Error(s) in loading state_dict for DenoisingUNet3D:
+	Missing key(s) in state_dict: "te.1.weight", "te.1.bias", "te.3.weight", "te.3.bias", "de.1.weight", "de.1.bias", "de.3.weight", "de.3.bias", "class_emb.weight", "e1.0.weight", "e1.0.bias", "e1.1.weight", "e1.1.bias", "e1.3.weight", "e1.3.bias", "e1.4.weight", "e1.4.bias", "d1.weight", "d1.bias", "e2.0.weight", "e2.0.bias", "e2.1.weight", "e2.1.bias", "e2.3.weight", "e2.3.bias", "e2.4.weight", "e2.4.bias", "d2.weight", "d2.bias", "mid.0.weight", "mid.0.bias", "mid.1.weight", "mid.1.bias", "mid.3.weight", "mid.3.bias", "mid.4.weight", "mid.4.bias", "tp1.weight", "tp1.bias", "tp2.weight", "tp2.bias", "tpm.weight", "tpm.bias", "u2.conv.weight", "u2.conv.bias", "dc2.0.weight", "dc2.0.bias", "dc2.1.weight", "dc2.1.bias", "dc2.3.weight", "dc2.3.bias", "dc2.4.weight", "dc2.4.bias", "u1.conv.weight", "u1.conv.bias", "dc1.0.weight", "dc1.0.bias", "dc1.1.weight", "dc1.1.bias", "dc1.3.weight", "dc1.3.bias". 
+	Unexpected key(s) in state_dict: "enc.net.0.weight", "enc.net.0.bias", "enc.net.2.weight", "enc.net.2.bias", "enc.net.4.weight", "enc.net.4.bias", "enc.net.6.weight", "enc.net.6.bias", "enc.net.8.net.0.weight", "enc.net.8.net.0.bias", "enc.net.8.net.2.weight", "enc.net.8.net.2.bias", "enc.net.8.net.3.weight", "enc.net.8.net.3.bias", "enc.net.8.net.5.weight", "enc.net.8.net.5.bias", "enc.net.9.net.0.weight", "enc.net.9.net.0.bias", "enc.net.9.net.2.weight", "enc.net.9.net.2.bias", "enc.net.9.net.3.weight", "enc.net.9.net.3.bias", "enc.net.9.net.5.weight", "enc.net.9.net.5.bias", "dec.res.0.net.0.weight", "dec.res.0.net.0.bias", "dec.res.0.net.2.weight", "dec.res.0.net.2.bias", "dec.res.0.net.3.weight", "dec.res.0.net.3.bias", "dec.res.0.net.5.weight", "dec.res.0.net.5.bias", "dec.res.1.net.0.weight", "dec.res.1.net.0.bias", "dec.res.1.net.2.weight", "dec.res.1.net.2.bias", "dec.res.1.net.3.weight", "dec.res.1.net.3.bias", "dec.res.1.net.5.weight", "dec.res.1.net.5.bias", "dec.up.0.conv.weight", "dec.up.0.conv.bias", "dec.up.2.conv.weight", "dec.up.2.conv.bias", "dec.up.4.conv.weight", "dec.up.4.conv.bias", "dec.up.6.weight", "dec.up.6.bias", "vq.emb.weight", "unet.te.1.weight", "unet.te.1.bias", "unet.te.3.weight", "unet.te.3.bias", "unet.de.1.weight", "unet.de.1.bias", "unet.de.3.weight", "unet.de.3.bias", "unet.class_emb.weight", "unet.e1.0.weight", "unet.e1.0.bias", "unet.e1.1.weight", "unet.e1.1.bias", "unet.e1.3.weight", "unet.e1.3.bias", "unet.e1.4.weight", "unet.e1.4.bias", "unet.d1.weight", "unet.d1.bias", "unet.e2.0.weight", "unet.e2.0.bias", "unet.e2.1.weight", "unet.e2.1.bias", "unet.e2.3.weight", "unet.e2.3.bias", "unet.e2.4.weight", "unet.e2.4.bias", "unet.d2.weight", "unet.d2.bias", "unet.mid.0.weight", "unet.mid.0.bias", "unet.mid.1.weight", "unet.mid.1.bias", "unet.mid.3.weight", "unet.mid.3.bias", "unet.mid.4.weight", "unet.mid.4.bias", "unet.tp1.weight", "unet.tp1.bias", "unet.tp2.weight", "unet.tp2.bias", "unet.tpm.weight", "unet.tpm.bias", "unet.u2.conv.weight", "unet.u2.conv.bias", "unet.dc2.0.weight", "unet.dc2.0.bias", "unet.dc2.1.weight", "unet.dc2.1.bias", "unet.dc2.3.weight", "unet.dc2.3.bias", "unet.dc2.4.weight", "unet.dc2.4.bias", "unet.u1.conv.weight", "unet.u1.conv.bias", "unet.dc1.0.weight", "unet.dc1.0.bias", "unet.dc1.1.weight", "unet.dc1.1.bias", "unet.dc1.3.weight", "unet.dc1.3.bias". 
+Device: mps
+
+Loading 64-cubed conditional data from data/brats_conditional_64.pt...
+  Real subset (10%): 18 volumes  |  Test: 60 volumes
+
+Loading 64-cubed teacher from results/paper4/paper4/e7_teacher/teacher_best.pt...
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+
+[Step 1] Generating 500 volumes from Shortcut@50 (class 1)...
+  Saved syn_pool_shortcut_50_64.pt, syn_pool_shortcut_50_64_feats.pt
+
+[Step 2] Building diversity conditions from feature centrality...
+  unique_500: 500 total, 500 unique, L1 div = 0.0370
+  unique_100: 500 total, 100 unique, L1 div = 0.0358
+  unique_25: 500 total, 25 unique, L1 div = 0.0325
+  unique_10: 500 total, 10 unique, L1 div = 0.0348
+
+========================================
+  UNIQUE_500
+========================================
+    Pseudo-labelling 500 synthetic volumes...
+  Seed 42:
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+tier_c/e10a_64_5seed/e10a_64_5seed.py:351: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /Users/runner/work/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:839.)
+  print(f"      iter {it:>5}/{max_iters} loss={float(loss):.4f} "
+      iter     1/200 loss=1.7249 (lr=3.27e-05, skipped_nan=0, 1s)
+      iter   200/200 loss=0.9522 (lr=0.00e+00, skipped_nan=0, 145s)
+      → Dice 0.6753  CI95=[0.6388, 0.7142]  (152s = 0.04h) [ok]
+    Checkpoint saved to e10a_64_5seed_results_partial.json
+  Seed 43:
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+      iter     1/200 loss=1.1973 (lr=3.27e-05, skipped_nan=0, 1s)
+      iter   200/200 loss=0.7144 (lr=0.00e+00, skipped_nan=0, 156s)
+      → Dice 0.7177  CI95=[0.6819, 0.7549]  (163s = 0.05h) [ok]
+    Checkpoint saved to e10a_64_5seed_results_partial.json
+  Seed 44:
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+      iter     1/200 loss=1.2353 (lr=3.27e-05, skipped_nan=0, 1s)

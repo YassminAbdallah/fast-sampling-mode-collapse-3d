@@ -1,0 +1,79 @@
+{
+  "real_data": {
+    "unique_codes": 78,
+    "total_codes": 256,
+    "utilization_pct": 30.46875,
+    "entropy": 7.598963260650635,
+    "top10_concentration": 32.2900390625
+  },
+  "fm@50": {
+    "unique_codes": 82,
+    "total_codes": 256,
+    "utilization_pct": 32.03125,
+    "entropy": 7.7228827476501465,
+    "top10_concentration": 34.3841552734375
+  },
+  "rectified@10": {
+    "unique_codes": 82,
+    "total_codes": 256,
+    "utilization_pct": 32.03125,
+    "entropy": 7.6589035987854,
+    "top10_concentration": 34.85107421875
+  },
+  "shortcut@1": {
+    "unique_codes": 76,
+    "total_codes": 256,
+    "utilization_pct": 29.6875,
+    "entropy": 7.082331657409668,
+    "top10_concentration": 32.6995849609375
+  },
+  "shortcut@4": {
+    "unique_codes": 81,
+    "total_codes": 256,
+    "utilization_pct": 31.640625,
+    "entropy": 7.596498012542725,
+    "top10_concentration": 35.260009765625
+  },
+  "shortcut@16": {
+    "unique_codes": 76,
+    "total_codes": 256,
+    "utilization_pct": 29.6875,
+    "entropy": 7.178488254547119,
+    "top10_concentration": 34.442138671875
+  },
+  "shortcut@128": {
+    "unique_codes": 81,
+    "total_codes": 256,
+    "utilization_pct": 31.640625,
+    "entropy": 7.594887733459473,
+    "top10_concentration": 33.9569091796875
+  },
+  "consistency@1": {
+    "unique_codes": 76,
+    "total_codes": 256,
+    "utilization_pct": 29.6875,
+    "entropy": 7.188999176025391,
+    "top10_concentration": 40.0909423828125
+  },
+  "consistency@4": {
+    "unique_codes": 81,
+    "total_codes": 256,
+    "utilization_pct": 31.640625,
+    "entropy": 8.05322551727295,
+    "top10_concentration": 42.85888671875
+  },
+  "consistency@50": {
+    "unique_codes": 73,
+    "total_codes": 256,
+    "utilization_pct": 28.515625,
+    "entropy": 8.907214164733887,
+    "top10_concentration": 63.1866455078125
+  },
+  "ddpm@1000": {
+    "unique_codes": 80,
+    "total_codes": 256,
+    "utilization_pct": 31.25,
+    "entropy": 7.570016384124756,
+    "top10_concentration": 35.9405517578125
+  }
+}

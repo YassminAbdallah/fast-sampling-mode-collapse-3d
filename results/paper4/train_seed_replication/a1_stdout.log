@@ -1,0 +1,232 @@
+Device: mps
+Method: consistency
+Training seed: 100
+VQ-GAN:  results/paper4/brats_benchmark_20260324_154926/100pct_180vol/phase1_shared.pt
+FM teacher: results/paper4/brats_benchmark_20260324_154926/100pct_180vol/fm/final.pt
+Data:    data/brats_conditional_64.pt
+Loaded 300 volumes, shape (300, 1, 64, 64, 64)
+Epochs: consistency=80, shortcut=80
+Training: 180 volumes, batch 4, 45 iters/epoch
+
+============================================================
+PHASE 2c: CONSISTENCY (80 epochs)
+============================================================
+  [  1/80] consist=0.002285 N=3 | 8.2s
+  [  5/80] consist=0.000220 N=11 | 7.0s
+  [ 10/80] consist=0.000062 N=20 | 7.0s
+  [ 15/80] consist=0.000036 N=29 | 7.0s
+  [ 20/80] consist=0.000041 N=39 | 7.1s
+  [ 25/80] consist=0.000008 N=48 | 7.0s
+  [ 30/80] consist=0.000014 N=57 | 7.0s
+  [ 35/80] consist=0.000011 N=66 | 7.0s
+  [ 40/80] consist=0.000005 N=76 | 7.4s
+  [ 45/80] consist=0.000004 N=85 | 7.7s
+  [ 50/80] consist=0.000002 N=94 | 7.6s
+  [ 55/80] consist=0.000002 N=103 | 7.4s
+  [ 60/80] consist=0.000002 N=113 | 7.5s
+  [ 65/80] consist=0.000001 N=122 | 7.9s
+  [ 70/80] consist=0.000001 N=131 | 8.0s
+  [ 75/80] consist=0.000001 N=140 | 8.0s
+  [ 80/80] consist=0.000001 N=150 | 8.5s
+Consistency done
+
+Training finished in 599s = 0.17h
+Saved training log: results/paper4/train_seed_replication/consistency_trainseed100/training_log.json
+Saved model:        results/paper4/train_seed_replication/consistency_trainseed100/final.pt
+Device: mps
+Method: consistency
+Training seed: 200
+VQ-GAN:  results/paper4/brats_benchmark_20260324_154926/100pct_180vol/phase1_shared.pt
+FM teacher: results/paper4/brats_benchmark_20260324_154926/100pct_180vol/fm/final.pt
+Data:    data/brats_conditional_64.pt
+Loaded 300 volumes, shape (300, 1, 64, 64, 64)
+Epochs: consistency=80, shortcut=80
+Training: 180 volumes, batch 4, 45 iters/epoch
+
+============================================================
+PHASE 2c: CONSISTENCY (80 epochs)
+============================================================
+  [  1/80] consist=0.002294 N=3 | 7.6s
+  [  5/80] consist=0.000428 N=11 | 7.9s
+  [ 10/80] consist=0.000118 N=20 | 7.5s
+  [ 15/80] consist=0.000186 N=29 | 7.5s
+  [ 20/80] consist=0.000014 N=39 | 7.6s
+  [ 25/80] consist=0.000010 N=48 | 7.7s
+  [ 30/80] consist=0.000973 N=57 | 7.3s
+  [ 35/80] consist=0.000015 N=66 | 7.4s
+  [ 40/80] consist=0.000005 N=76 | 7.5s
+  [ 45/80] consist=0.000004 N=85 | 7.4s
+  [ 50/80] consist=0.000002 N=94 | 7.2s
+  [ 55/80] consist=0.000002 N=103 | 7.5s
+  [ 60/80] consist=0.000001 N=113 | 7.4s
+  [ 65/80] consist=0.000001 N=122 | 7.3s
+  [ 70/80] consist=0.000001 N=131 | 7.4s
+  [ 75/80] consist=0.000001 N=140 | 7.4s
+  [ 80/80] consist=0.000001 N=150 | 7.2s
+Consistency done
+
+Training finished in 597s = 0.17h
+Saved training log: results/paper4/train_seed_replication/consistency_trainseed200/training_log.json
+Saved model:        results/paper4/train_seed_replication/consistency_trainseed200/final.pt
+Device: mps
+Method: shortcut
+Training seed: 100
+VQ-GAN:  results/paper4/brats_benchmark_20260324_154926/100pct_180vol/phase1_shared.pt
+FM teacher: results/paper4/brats_benchmark_20260324_154926/100pct_180vol/fm/final.pt
+Data:    data/brats_conditional_64.pt
+Loaded 300 volumes, shape (300, 1, 64, 64, 64)
+Epochs: consistency=150, shortcut=150
+Training: 180 volumes, batch 4, 45 iters/epoch
+
+============================================================
+PHASE 2: SHORTCUT FM (150 epochs, SC ratio=0.25)
+============================================================
+  [  1/150] total=0.956723 fm=0.956723 sc=0.000000 d_max=0.0144 (fm:45 sc:0) | 6.7s
+  [  2/150] total=0.504539 fm=0.709507 sc=0.000000 d_max=0.0210 (fm:32 sc:13) | 6.5s
+  [  3/150] total=0.487428 fm=0.645125 sc=0.000000 d_max=0.0277 (fm:34 sc:11) | 6.4s
+  [  5/150] total=0.356581 fm=0.501442 sc=0.000002 d_max=0.0409 (fm:32 sc:13) | 6.5s
+  [ 10/150] total=0.290096 fm=0.362616 sc=0.000016 d_max=0.0740 (fm:36 sc:9) | 6.5s
+  [ 15/150] total=0.214957 fm=0.333531 sc=0.000041 d_max=0.1070 (fm:29 sc:16) | 6.8s
+  [ 20/150] total=0.219424 fm=0.282064 sc=0.000182 d_max=0.1401 (fm:35 sc:10) | 6.8s
+  [ 25/150] total=0.225874 fm=0.290332 sc=0.000269 d_max=0.1732 (fm:35 sc:10) | 7.2s
+  [ 30/150] total=0.200368 fm=0.290700 sc=0.000346 d_max=0.2063 (fm:31 sc:14) | 7.0s
+  [ 35/150] total=0.188215 fm=0.241873 sc=0.000408 d_max=0.2393 (fm:35 sc:10) | 6.6s
+  [ 40/150] total=0.220034 fm=0.282688 sc=0.000744 d_max=0.2724 (fm:35 sc:10) | 6.5s
+  [ 45/150] total=0.193559 fm=0.271877 sc=0.000777 d_max=0.3055 (fm:32 sc:13) | 6.8s
+  [ 50/150] total=0.183716 fm=0.275336 sc=0.000476 d_max=0.3385 (fm:30 sc:15) | 6.7s
+  [ 55/150] total=0.219625 fm=0.267043 sc=0.000315 d_max=0.3716 (fm:37 sc:8) | 6.7s
+  [ 60/150] total=0.174742 fm=0.245483 sc=0.000611 d_max=0.4047 (fm:32 sc:13) | 6.8s
+  [ 65/150] total=0.177201 fm=0.265673 sc=0.000257 d_max=0.4378 (fm:30 sc:15) | 6.7s
+  [ 70/150] total=0.185127 fm=0.244872 sc=0.000462 d_max=0.4708 (fm:34 sc:11) | 6.8s
+  [ 75/150] total=0.152816 fm=0.202157 sc=0.000307 d_max=0.5039 (fm:34 sc:11) | 6.7s
+  [ 80/150] total=0.185105 fm=0.231235 sc=0.000586 d_max=0.5370 (fm:36 sc:9) | 6.6s
+  [ 85/150] total=0.190014 fm=0.237404 sc=0.000457 d_max=0.5701 (fm:36 sc:9) | 6.7s
+  [ 90/150] total=0.191938 fm=0.227245 sc=0.000272 d_max=0.6031 (fm:38 sc:7) | 6.5s
+  [ 95/150] total=0.155165 fm=0.199334 sc=0.000576 d_max=0.6362 (fm:35 sc:10) | 6.5s
+  [100/150] total=0.172778 fm=0.228523 sc=0.000476 d_max=0.6693 (fm:34 sc:11) | 6.9s
+  [105/150] total=0.158852 fm=0.216346 sc=0.000741 d_max=0.7023 (fm:33 sc:12) | 6.7s
+  [110/150] total=0.105996 fm=0.164167 sc=0.000562 d_max=0.7354 (fm:29 sc:16) | 6.8s
+  [115/150] total=0.148141 fm=0.190333 sc=0.000468 d_max=0.7685 (fm:35 sc:10) | 6.8s
+  [120/150] total=0.154054 fm=0.209947 sc=0.000347 d_max=0.8016 (fm:33 sc:12) | 6.7s
+  [125/150] total=0.146574 fm=0.212495 sc=0.000606 d_max=0.8346 (fm:31 sc:14) | 6.8s
+  [130/150] total=0.118202 fm=0.189662 sc=0.000505 d_max=0.8677 (fm:28 sc:17) | 6.9s
+  [135/150] total=0.201843 fm=0.227003 sc=0.000563 d_max=0.9008 (fm:40 sc:5) | 6.5s
+  [140/150] total=0.131962 fm=0.197720 sc=0.000447 d_max=0.9339 (fm:30 sc:15) | 6.8s
+  [145/150] total=0.123545 fm=0.185196 sc=0.000243 d_max=0.9669 (fm:30 sc:15) | 6.8s
+  [150/150] total=0.162590 fm=0.228423 sc=0.000541 d_max=1.0000 (fm:32 sc:13) | 6.7s
+Shortcut FM done
+
+Training finished in 1007s = 0.28h
+Saved training log: results/paper4/train_seed_replication/shortcut_trainseed100/training_log.json
+Saved model:        results/paper4/train_seed_replication/shortcut_trainseed100/final.pt
+Device: mps
+Method: shortcut
+Training seed: 200
+VQ-GAN:  results/paper4/brats_benchmark_20260324_154926/100pct_180vol/phase1_shared.pt
+FM teacher: results/paper4/brats_benchmark_20260324_154926/100pct_180vol/fm/final.pt
+Data:    data/brats_conditional_64.pt
+Loaded 300 volumes, shape (300, 1, 64, 64, 64)
+Epochs: consistency=150, shortcut=150
+Training: 180 volumes, batch 4, 45 iters/epoch
+
+============================================================
+PHASE 2: SHORTCUT FM (150 epochs, SC ratio=0.25)
+============================================================
+  [  1/150] total=0.941810 fm=0.941810 sc=0.000000 d_max=0.0144 (fm:45 sc:0) | 6.7s
+  [  2/150] total=0.530188 fm=0.681670 sc=0.000000 d_max=0.0210 (fm:35 sc:10) | 6.3s
+  [  3/150] total=0.520924 fm=0.601066 sc=0.000000 d_max=0.0277 (fm:39 sc:6) | 6.3s
+  [  5/150] total=0.349416 fm=0.491365 sc=0.000001 d_max=0.0409 (fm:32 sc:13) | 6.7s
+  [ 10/150] total=0.295928 fm=0.403526 sc=0.000032 d_max=0.0740 (fm:33 sc:12) | 6.7s
+  [ 15/150] total=0.254216 fm=0.357458 sc=0.000081 d_max=0.1070 (fm:32 sc:13) | 6.9s
+  [ 20/150] total=0.231361 fm=0.289166 sc=0.000145 d_max=0.1401 (fm:36 sc:9) | 6.8s
+  [ 25/150] total=0.239670 fm=0.308107 sc=0.000138 d_max=0.1732 (fm:35 sc:10) | 6.6s
+  [ 30/150] total=0.187851 fm=0.248470 sc=0.000484 d_max=0.2063 (fm:34 sc:11) | 6.9s
+  [ 35/150] total=0.195695 fm=0.266741 sc=0.000319 d_max=0.2393 (fm:33 sc:12) | 6.7s
+  [ 40/150] total=0.177004 fm=0.234084 sc=0.000577 d_max=0.2724 (fm:34 sc:11) | 6.5s
+  [ 45/150] total=0.153361 fm=0.209004 sc=0.000343 d_max=0.3055 (fm:33 sc:12) | 6.8s
+  [ 50/150] total=0.203103 fm=0.246928 sc=0.000413 d_max=0.3385 (fm:37 sc:8) | 6.6s
+  [ 55/150] total=0.181084 fm=0.208881 sc=0.000404 d_max=0.3716 (fm:39 sc:6) | 6.7s
+  [ 60/150] total=0.186187 fm=0.270015 sc=0.000567 d_max=0.4047 (fm:31 sc:14) | 6.9s
+  [ 65/150] total=0.164045 fm=0.245855 sc=0.000425 d_max=0.4378 (fm:30 sc:15) | 6.8s
+  [ 70/150] total=0.154704 fm=0.198741 sc=0.000576 d_max=0.4708 (fm:35 sc:10) | 6.8s
+  [ 75/150] total=0.194419 fm=0.230150 sc=0.000451 d_max=0.5039 (fm:38 sc:7) | 6.7s
+  [ 80/150] total=0.183615 fm=0.229415 sc=0.000412 d_max=0.5370 (fm:36 sc:9) | 6.6s
+  [ 85/150] total=0.163787 fm=0.216578 sc=0.000615 d_max=0.5701 (fm:34 sc:11) | 6.8s
+  [ 90/150] total=0.171635 fm=0.226988 sc=0.000543 d_max=0.6031 (fm:34 sc:11) | 6.7s
+  [ 95/150] total=0.183562 fm=0.223222 sc=0.000137 d_max=0.6362 (fm:37 sc:8) | 6.7s
+  [100/150] total=0.143005 fm=0.207298 sc=0.000642 d_max=0.6693 (fm:31 sc:14) | 6.9s
+  [105/150] total=0.158834 fm=0.193037 sc=0.000646 d_max=0.7023 (fm:37 sc:8) | 6.6s
+  [110/150] total=0.134767 fm=0.216373 sc=0.000356 d_max=0.7354 (fm:28 sc:17) | 7.1s
+  [115/150] total=0.168721 fm=0.223157 sc=0.000467 d_max=0.7685 (fm:34 sc:11) | 6.7s
+  [120/150] total=0.125851 fm=0.176783 sc=0.000482 d_max=0.8016 (fm:32 sc:13) | 6.7s
+  [125/150] total=0.191545 fm=0.232846 sc=0.000530 d_max=0.8346 (fm:37 sc:8) | 6.8s
+  [130/150] total=0.153301 fm=0.186421 sc=0.000126 d_max=0.8677 (fm:37 sc:8) | 6.5s
+  [135/150] total=0.165530 fm=0.225599 sc=0.000341 d_max=0.9008 (fm:33 sc:12) | 6.9s
+  [140/150] total=0.164554 fm=0.205647 sc=0.000178 d_max=0.9339 (fm:36 sc:9) | 6.7s
+  [145/150] total=0.130742 fm=0.209853 sc=0.000441 d_max=0.9669 (fm:28 sc:17) | 7.1s
+  [150/150] total=0.201102 fm=0.238034 sc=0.000616 d_max=1.0000 (fm:38 sc:7) | 6.8s
+Shortcut FM done
+
+Training finished in 1015s = 0.28h
+Saved training log: results/paper4/train_seed_replication/shortcut_trainseed200/training_log.json
+Saved model:        results/paper4/train_seed_replication/shortcut_trainseed200/final.pt
+Device: mps
+real_diversity (n=64) = 0.0451
+
+============================================================
+  consistency — original  (train_seed: implicit)
+============================================================
+
+  Loading consistency: results/paper4/brats_benchmark_20260324_154926/100pct_180vol/consistency/final.pt
+    NFE=  4: SSIM=0.8020±0.0007  div=0.0147 (32.6% real)
+    NFE= 50: SSIM=0.7985±0.0007  div=0.0152 (33.6% real)
+
+============================================================
+  consistency — seed100  (train_seed: 100)
+============================================================
+
+  Loading consistency: results/paper4/train_seed_replication/consistency_trainseed100/final.pt
+    NFE=  4: SSIM=0.7983±0.0015  div=0.0228 (50.5% real)
+    NFE= 50: SSIM=0.7944±0.0011  div=0.0234 (51.7% real)
+
+============================================================
+  consistency — seed200  (train_seed: 200)
+============================================================
+
+  Loading consistency: results/paper4/train_seed_replication/consistency_trainseed200/final.pt
+    NFE=  4: SSIM=0.7985±0.0015  div=0.0226 (50.0% real)
+    NFE= 50: SSIM=0.7943±0.0008  div=0.0222 (49.2% real)
+
+============================================================
+  shortcut — original  (train_seed: implicit)
+============================================================
+
+  Loading shortcut: results/paper4/brats_benchmark_20260324_154926/100pct_180vol/shortcut/final.pt
+    NFE=  4: SSIM=0.7853±0.0029  div=0.0353 (78.2% real)
+    NFE= 50: SSIM=0.7827±0.0030  div=0.0367 (81.3% real)
+
+============================================================
+  shortcut — seed100  (train_seed: 100)
+============================================================
+
+  Loading shortcut: results/paper4/train_seed_replication/shortcut_trainseed100/final.pt
+    NFE=  4: SSIM=0.7882±0.0024  div=0.0295 (65.4% real)
+    NFE= 50: SSIM=0.7869±0.0027  div=0.0319 (70.6% real)
+
+============================================================
+  shortcut — seed200  (train_seed: 200)
+============================================================
+
+  Loading shortcut: results/paper4/train_seed_replication/shortcut_trainseed200/final.pt
+    NFE=  4: SSIM=0.7873±0.0018  div=0.0288 (63.9% real)
+    NFE= 50: SSIM=0.7862±0.0020  div=0.0314 (69.7% real)
+
+======================================================================
+A1 headline: cross-training-seed variance per method
+======================================================================
+  consistency@4: mean diversity 44.3% real  cross-train-seed std 10.2 pp  (vs within-train-seed sampling std 0.64 pp)
+  consistency@50: mean diversity 44.8% real  cross-train-seed std 9.8 pp  (vs within-train-seed sampling std 2.41 pp)
+  shortcut@4: mean diversity 69.2% real  cross-train-seed std 7.9 pp  (vs within-train-seed sampling std 2.36 pp)
+  shortcut@50: mean diversity 73.8% real  cross-train-seed std 6.5 pp  (vs within-train-seed sampling std 2.67 pp)
+
+Saved results/paper4/train_seed_replication/a1_eval_summary.json

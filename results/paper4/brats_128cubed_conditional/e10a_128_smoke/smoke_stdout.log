@@ -1,0 +1,30 @@
+Device: mps
+Real subset (10% of train_idx): 18 volumes
+Test: 60 volumes
+
+Step 1: Generating 500 class-1 samples from Shortcut@50 at 128³ …
+  Generated 500 volumes shape (500, 1, 128, 128, 128) (473s)
+  Computing latent features for centrality ordering …
+
+Step 2: Building diversity conditions [500, 100, 25, 10] …
+  unique_500: n_total=500, L1 diversity=0.0377
+  unique_100: n_total=500, L1 diversity=0.0291
+  unique_25: n_total=500, L1 diversity=0.0263
+  unique_10: n_total=500, L1 diversity=0.0231
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+
+--- UNIQUE_500 ---
+  Need to run 1/1 seeds (others already valid: [])
+    Generating pseudo-labels for 500 synthetic volumes...
+  Tumor detection rate (teacher on synthetic): 100.0%
+  Seed 42:
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+      iter     1/500 loss=1.6974 (lr=3.00e-05, skipped_nan=0, 14s)
+      iter   500/500 loss=0.5039 (lr=0.00e+00, skipped_nan=1, 6369s)
+    → Dice 0.7400  CI95=[0.7025, 0.7804]  (6473s = 1.80h) [ok]
+    Checkpoint saved to results/paper4/brats_128cubed_conditional/e10a_128_smoke/e10a_results_128_partial.json
+  → unique_500: 0.7400 ± 0.0000 (over 1 valid seeds)
+
+--- UNIQUE_100 ---
+  Need to run 1/1 seeds (others already valid: [])
+    Generating pseudo-labels for 500 synthetic volumes...

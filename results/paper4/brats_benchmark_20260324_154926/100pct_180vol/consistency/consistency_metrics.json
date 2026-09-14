@@ -1,0 +1,68 @@
+{
+  "1": {
+    "method": "consistency",
+    "steps": 1,
+    "gen_ssim": 0.6705129705369473,
+    "gen_ssim_std": 0.09598214985425751,
+    "gen_psnr": 18.8866708278656,
+    "gen_psnr_std": 1.9427498131308696,
+    "time_per_vol": 0.0027274489402770996,
+    "recon_ssim": 0.9030903726816177,
+    "nfe": 1
+  },
+  "2": {
+    "method": "consistency",
+    "steps": 2,
+    "gen_ssim": 0.7044342532753944,
+    "gen_ssim_std": 0.09135311154712311,
+    "gen_psnr": 19.28052854537964,
+    "gen_psnr_std": 1.9507612415464897,
+    "time_per_vol": 0.00652623176574707,
+    "recon_ssim": 0.9030903726816177,
+    "nfe": 2
+  },
+  "4": {
+    "method": "consistency",
+    "steps": 4,
+    "gen_ssim": 0.7193681038916111,
+    "gen_ssim_std": 0.07808512675719366,
+    "gen_psnr": 19.38499128818512,
+    "gen_psnr_std": 1.8350360069924618,
+    "time_per_vol": 0.008055314421653748,
+    "recon_ssim": 0.9030903726816177,
+    "nfe": 4
+  },
+  "8": {
+    "method": "consistency",
+    "steps": 8,
+    "gen_ssim": 0.7488221824169159,
+    "gen_ssim_std": 0.06982500370837624,
+    "gen_psnr": 19.556766986846924,
+    "gen_psnr_std": 1.7043390216850867,
+    "time_per_vol": 0.01627229154109955,
+    "recon_ssim": 0.9030903726816177,
+    "nfe": 8
+  },
+  "16": {
+    "method": "consistency",
+    "steps": 16,
+    "gen_ssim": 0.7533428743481636,
+    "gen_ssim_std": 0.07021763904041509,
+    "gen_psnr": 19.57746410369873,
+    "gen_psnr_std": 1.6697457242658134,
+    "time_per_vol": 0.03341631591320038,
+    "recon_ssim": 0.9030903726816177,
+    "nfe": 16
+  },
+  "50": {
+    "method": "consistency",
+    "steps": 50,
+    "gen_ssim": 0.7615032456815243,
+    "gen_ssim_std": 0.07205159694820999,
+    "gen_psnr": 19.572610318660736,
+    "gen_psnr_std": 1.6113500052707748,
+    "time_per_vol": 0.09914369881153107,
+    "recon_ssim": 0.9030903726816177,
+    "nfe": 50
+  }
+}

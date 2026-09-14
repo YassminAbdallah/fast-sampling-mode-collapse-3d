@@ -1,0 +1,64 @@
+Device: mps
+Variant: ema_pseudohuber  (EMA target + Pseudo-Huber loss (Cell C: 'EMA + Pseudo-Huber'))
+VQ-GAN:    results/paper4/brats_benchmark_20260324_154926/100pct_180vol/phase1_shared.pt
+FM teacher:results/paper4/brats_benchmark_20260324_154926/100pct_180vol/fm/final.pt
+Loaded 300 volumes, shape (300, 1, 64, 64, 64)
+Loaded labels, unique values: [0, 1]
+Training: 180 volumes, batch 4, 45 iters/epoch
+
+============================================================
+2x2 FACTORIAL — variant 'ema_pseudohuber' — 80 epochs
+============================================================
+  EMA target enabled (decay=0.999)
+  [  1/80] ema_pseudohuber=3.017931 N=3 | 16.8s
+  [  5/80] ema_pseudohuber=0.944679 N=11 | 15.0s
+  [ 10/80] ema_pseudohuber=0.611446 N=20 | 12.5s
+  [ 15/80] ema_pseudohuber=0.635833 N=29 | 13.9s
+  [ 20/80] ema_pseudohuber=0.496464 N=39 | 14.6s
+  [ 25/80] ema_pseudohuber=0.493533 N=48 | 12.5s
+  [ 30/80] ema_pseudohuber=0.340872 N=57 | 13.8s
+  [ 35/80] ema_pseudohuber=0.328014 N=66 | 15.1s
+  [ 40/80] ema_pseudohuber=0.190553 N=76 | 12.6s
+  [ 45/80] ema_pseudohuber=0.233660 N=85 | 14.5s
+  [ 50/80] ema_pseudohuber=0.144089 N=94 | 15.3s
+  [ 55/80] ema_pseudohuber=0.121912 N=103 | 13.5s
+  [ 60/80] ema_pseudohuber=0.088183 N=113 | 13.7s
+  [ 65/80] ema_pseudohuber=0.058636 N=122 | 12.8s
+  [ 70/80] ema_pseudohuber=0.042045 N=131 | 13.1s
+  [ 75/80] ema_pseudohuber=0.031164 N=140 | 15.2s
+  [ 80/80] ema_pseudohuber=0.028705 N=150 | 13.4s
+
+Saved results/paper4/cd_2x2/ema_pseudohuber/final.pt
+Saved training log: results/paper4/cd_2x2/training_log_ema_pseudohuber.json
+Device: mps
+Variant: noema_l2  (No-EMA target + L2 loss          (Cell D: 'no-EMA + L2'))
+VQ-GAN:    results/paper4/brats_benchmark_20260324_154926/100pct_180vol/phase1_shared.pt
+FM teacher:results/paper4/brats_benchmark_20260324_154926/100pct_180vol/fm/final.pt
+Loaded 300 volumes, shape (300, 1, 64, 64, 64)
+Loaded labels, unique values: [0, 1]
+Training: 180 volumes, batch 4, 45 iters/epoch
+
+============================================================
+2x2 FACTORIAL — variant 'noema_l2' — 80 epochs
+============================================================
+  No EMA: target = stop-gradient on the student itself
+  [  1/80] noema_l2=0.502038 N=3 | 14.9s
+  [  5/80] noema_l2=1.354709 N=11 | 14.5s
+  [ 10/80] noema_l2=1.594971 N=20 | 12.8s
+  [ 15/80] noema_l2=1.656980 N=29 | 13.9s
+  [ 20/80] noema_l2=1.571308 N=39 | 12.9s
+  [ 25/80] noema_l2=1.547223 N=48 | 13.4s
+  [ 30/80] noema_l2=1.490168 N=57 | 14.8s
+  [ 35/80] noema_l2=1.409950 N=66 | 13.9s
+  [ 40/80] noema_l2=1.279500 N=76 | 15.7s
+  [ 45/80] noema_l2=1.180034 N=85 | 12.4s
+  [ 50/80] noema_l2=1.074970 N=94 | 15.8s
+  [ 55/80] noema_l2=0.968771 N=103 | 14.7s
+  [ 60/80] noema_l2=0.849838 N=113 | 15.2s
+  [ 65/80] noema_l2=0.754703 N=122 | 13.7s
+  [ 70/80] noema_l2=0.666960 N=131 | 15.3s
+  [ 75/80] noema_l2=0.588522 N=140 | 12.7s
+  [ 80/80] noema_l2=0.513444 N=150 | 14.1s
+
+Saved results/paper4/cd_2x2/noema_l2/final.pt
+Saved training log: results/paper4/cd_2x2/training_log_noema_l2.json

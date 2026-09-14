@@ -1,0 +1,18 @@
+{
+ "A_ema_l2": {
+  "ssim_at_nfe4": 0.8019589113071561,
+  "diversity_pct_real": 32.55264451392387
+ },
+ "B_noema_pseudohuber": {
+  "ssim_at_nfe4": 0.6895883481949567,
+  "diversity_pct_real": 3.362249192029407
+ },
+ "C_ema_pseudohuber": {
+  "ssim_at_nfe4": 0.7987876025959849,
+  "diversity_pct_real": 49.90908053068228
+ },
+ "D_noema_l2": {
+  "ssim_at_nfe4": 0.038363698730245234,
+  "diversity_pct_real": 21.09158498302498
+ }
+}

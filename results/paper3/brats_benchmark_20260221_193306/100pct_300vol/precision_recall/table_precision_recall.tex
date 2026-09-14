@@ -1,0 +1,28 @@
+\begin{table}[t]
+\centering
+\caption{Standard generative quality and diversity metrics. Precision/Recall: Kynk\"a\"anniemi et al.\ (2019), $k{=}3$. Density/Coverage: Naeem et al.\ (2020), $k{=}5$. Mean over 5 seeds.}
+\label{tab:precision_recall}
+\footnotesize
+\begin{tabular}{lcccc}
+\toprule
+Method & Precision $\uparrow$ & Recall $\uparrow$ & Density $\uparrow$ & Coverage $\uparrow$ \\
+\midrule
+  consistency@1 & 1.000$\pm$0.000 & 0.000$\pm$0.000 & 7.940$\pm$0.045 & 0.783$\pm$0.019 \\
+  consistency@4 & 1.000$\pm$0.000 & 0.000$\pm$0.000 & 8.431$\pm$0.026 & 0.729$\pm$0.007 \\
+  consistency@16 & 1.000$\pm$0.000 & 0.000$\pm$0.000 & 7.379$\pm$0.031 & 0.641$\pm$0.005 \\
+  consistency@50 & 1.000$\pm$0.000 & 0.000$\pm$0.000 & 7.064$\pm$0.004 & 0.588$\pm$0.002 \\
+  ddpm@1000 & 0.981$\pm$0.018 & 0.000$\pm$0.000 & 3.503$\pm$0.177 & 0.992$\pm$0.006 \\
+  fm@10 & 0.997$\pm$0.006 & 0.005$\pm$0.003 & 3.626$\pm$0.260 & 0.975$\pm$0.019 \\
+  fm@25 & 0.984$\pm$0.010 & 0.005$\pm$0.003 & 3.130$\pm$0.249 & 0.969$\pm$0.023 \\
+  fm@50 & 0.984$\pm$0.014 & 0.005$\pm$0.003 & 2.961$\pm$0.240 & 0.965$\pm$0.025 \\
+  rectified@5 & 0.994$\pm$0.008 & 0.000$\pm$0.000 & 3.910$\pm$0.230 & 0.976$\pm$0.019 \\
+  rectified@10 & 0.997$\pm$0.006 & 0.000$\pm$0.000 & 3.885$\pm$0.234 & 0.977$\pm$0.020 \\
+  rectified@25 & 0.994$\pm$0.012 & 0.000$\pm$0.000 & 3.866$\pm$0.238 & 0.978$\pm$0.019 \\
+  shortcut@1 & 1.000$\pm$0.000 & 0.000$\pm$0.000 & 6.168$\pm$0.089 & 0.880$\pm$0.024 \\
+  shortcut@4 & 0.981$\pm$0.018 & 0.000$\pm$0.000 & 4.337$\pm$0.217 & 0.986$\pm$0.010 \\
+  shortcut@16 & 0.981$\pm$0.018 & 0.003$\pm$0.002 & 3.379$\pm$0.156 & 0.983$\pm$0.009 \\
+  shortcut@50 & 0.975$\pm$0.025 & 0.003$\pm$0.002 & 3.076$\pm$0.132 & 0.979$\pm$0.012 \\
+  shortcut@128 & 0.972$\pm$0.030 & 0.003$\pm$0.002 & 2.991$\pm$0.127 & 0.978$\pm$0.013 \\
+\bottomrule
+\end{tabular}
+\end{table}

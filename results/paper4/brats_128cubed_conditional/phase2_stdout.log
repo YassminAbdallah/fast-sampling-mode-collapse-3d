@@ -1,0 +1,27 @@
+set_seed(42) applied
+Device: mps
+Loaded 300 conditional volumes shape (300, 1, 128, 128, 128) with 2 classes: [150, 150] per class
+
+============================================================
+PHASE 2: Conditional FM teacher at 128³ (80 epochs, num_classes=2)
+============================================================
+Training set: 300 volumes, batch 2, 150 iters/epoch
+  [  1/80] cond_fm=0.589613 | 57.1s
+  [  5/80] cond_fm=0.194732 | 55.7s
+  [ 10/80] cond_fm=0.127752 | 55.8s
+  [ 15/80] cond_fm=0.118979 | 55.8s
+  [ 20/80] cond_fm=0.105701 | 55.8s
+  [ 25/80] cond_fm=0.105716 | 55.7s
+  [ 30/80] cond_fm=0.124829 | 55.5s
+  [ 35/80] cond_fm=0.099850 | 55.6s
+  [ 40/80] cond_fm=0.093995 | 55.6s
+  [ 45/80] cond_fm=0.081797 | 55.7s
+  [ 50/80] cond_fm=0.104060 | 55.6s
+  [ 55/80] cond_fm=0.077316 | 55.6s
+  [ 60/80] cond_fm=0.090521 | 55.7s
+  [ 65/80] cond_fm=0.094058 | 55.7s
+  [ 70/80] cond_fm=0.099045 | 55.7s
+  [ 75/80] cond_fm=0.079783 | 55.7s
+  [ 80/80] cond_fm=0.081576 | 55.6s
+
+Saved results/paper4/brats_128cubed_conditional/fm/final.pt

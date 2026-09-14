@@ -1,0 +1,57 @@
+{
+  "ixi_dir": "data/ixi",
+  "preprocessed_file": "data/ixi_preprocessed_64.pt",
+  "target_size": 64,
+  "max_volumes": 200,
+  "latent_channels": 8,
+  "num_embeddings": 256,
+  "n_res_blocks": 2,
+  "epochs_phase1": 50,
+  "epochs_phase2": 50,
+  "epochs_reflow": 50,
+  "epochs_consistency": 50,
+  "epochs_shortcut": 50,
+  "batch_size": 2,
+  "lr_gen": 0.0001,
+  "lr_disc": 0.0004,
+  "num_diffusion_steps": 1000,
+  "consistency_s0": 2,
+  "consistency_s1": 150,
+  "recon_weight": 1.0,
+  "vq_weight": 1.0,
+  "perceptual_weight": 0.1,
+  "gan_weight": 0.1,
+  "gan_ramp_epochs": 50,
+  "gp_weight": 10.0,
+  "num_samples": 16,
+  "ddpm_sampling_steps": [
+    50,
+    200
+  ],
+  "fm_sampling_steps": [
+    10,
+    25,
+    50
+  ],
+  "rectified_sampling_steps": [
+    5,
+    10,
+    25
+  ],
+  "consistency_sampling_steps": [
+    1,
+    2,
+    4
+  ],
+  "shortcut_sampling_steps": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    50,
+    128
+  ],
+  "shortcut_sc_ratio": 0.25,
+  "shortcut_d_max_schedule": true
+}

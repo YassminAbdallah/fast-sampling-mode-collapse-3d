@@ -1,0 +1,27 @@
+# Raw + preprocessed data (public datasets; see README for provenance)
+data/
+datasets/
+*.nii
+*.nii.gz
+
+# Model weights & generated volume pools: too large for git, archived on Zenodo (see README)
+*.pt
+*.pth
+*.ckpt
+
+# Regenerable intermediates
+*.npy
+
+# OS / editor / build cruft
+.DS_Store
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+
+# Local-only folders
+archive/

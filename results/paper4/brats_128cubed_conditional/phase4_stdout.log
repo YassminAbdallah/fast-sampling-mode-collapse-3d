@@ -1,0 +1,26 @@
+set_seed(42) applied
+Device: mps
+Loaded 300 conditional volumes shape (300, 1, 128, 128, 128) with 2 classes: [150, 150] per class
+
+============================================================
+PHASE 4: Conditional Shortcut FM at 128³ (80 epochs)
+============================================================
+  [  1/80] cond_short=0.491105 d_max=0.0202 | 59.0s
+  [  5/80] cond_short=0.169203 d_max=0.0698 | 56.8s
+  [ 10/80] cond_short=0.114008 d_max=0.1318 | 61.0s
+  [ 15/80] cond_short=0.085064 d_max=0.1938 | 63.9s
+  [ 20/80] cond_short=0.075946 d_max=0.2559 | 64.1s
+  [ 25/80] cond_short=0.097770 d_max=0.3179 | 63.5s
+  [ 30/80] cond_short=0.093491 d_max=0.3799 | 63.6s
+  [ 35/80] cond_short=0.082706 d_max=0.4419 | 63.6s
+  [ 40/80] cond_short=0.077395 d_max=0.5039 | 60.0s
+  [ 45/80] cond_short=0.078459 d_max=0.5659 | 57.0s
+  [ 50/80] cond_short=0.075413 d_max=0.6279 | 57.0s
+  [ 55/80] cond_short=0.069645 d_max=0.6899 | 59.0s
+  [ 60/80] cond_short=0.067986 d_max=0.7520 | 60.0s
+  [ 65/80] cond_short=0.071140 d_max=0.8140 | 59.6s
+  [ 70/80] cond_short=0.072811 d_max=0.8760 | 60.1s
+  [ 75/80] cond_short=0.071754 d_max=0.9380 | 59.8s
+  [ 80/80] cond_short=0.071607 d_max=1.0000 | 59.8s
+
+Saved results/paper4/brats_128cubed_conditional/shortcut/final.pt

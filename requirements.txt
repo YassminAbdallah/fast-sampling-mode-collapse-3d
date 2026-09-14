@@ -1,0 +1,41 @@
+# Paper 2: Mode Collapse in Fast-Sampling 3D Medical Synthesis
+# Python 3.10.13 (tested); 3.10.x recommended
+#
+# Versions below are EXACT pins of the environment used to produce
+# every reported number.
+#
+# Hardware-agnostic; tested on Apple M-series via PyTorch MPS backend.
+# Cross-backend tolerance (MPS vs CUDA) on reported metrics: ≤ 0.005 SSIM,
+# ≤ 0.5 PSNR, ≤ 0.001 pairwise-L1 diversity (see README §Reproducibility).
+
+# Core deep learning
+torch==2.3.1
+numpy==1.26.4
+
+# Medical imaging
+monai==1.3.2
+nibabel==5.2.1
+
+# Evaluation, plotting
+scikit-learn==1.4.2
+scipy==1.13.1
+matplotlib==3.8.4
+
+# ---------------------------------------------------------------
+# Notes on reproducibility:
+#   - All entry points should call src/utils/set_seed.py:set_seed(seed)
+#     before any RNG-using code. This sets:
+#       * Python random.seed
+#       * numpy.random.seed
+#       * torch.manual_seed (+ cuda.manual_seed_all / mps.manual_seed)
+#       * torch.use_deterministic_algorithms(True) (CUDA)
+#       * CUBLAS_WORKSPACE_CONFIG = ':4096:8' (CUDA, required by
+#         torch.use_deterministic_algorithms)
+#       * torch.backends.cudnn.deterministic = True
+#       * torch.backends.cudnn.benchmark = False
+#     and returns a torch.Generator with the same seed for DataLoader use.
+#
+#   - Apple MPS has known non-determinism on some op variants
+#     (notably reduction kernels). Numbers reported in the paper
+#     are MPS-derived; CUDA reproduction is expected within the
+#     tolerance band stated above. See README for details.

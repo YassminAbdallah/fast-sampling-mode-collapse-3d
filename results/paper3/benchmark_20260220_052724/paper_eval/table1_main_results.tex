@@ -1,0 +1,23 @@
+\begin{table}[t]
+\centering
+\caption{Quantitative comparison of Flow Matching and Shortcut Flow Matching
+for 3D brain MRI synthesis on IXI (200 volumes, 64$^3$). Mean $\pm$ std over 3 seeds.}
+\label{tab:main_results}
+\begin{tabular}{llcccc}
+\toprule
+Method & NFE & SSIM $\uparrow$ & PSNR $\uparrow$ & MS-SSIM $\uparrow$ & Time (s) \\
+\midrule
+FM & 10 & 0.6387$\pm$0.0069 & 17.04$\pm$0.12 & 0.7125 & 0.082 \\
+FM & 25 & 0.6357$\pm$0.0069 & 17.01$\pm$0.12 & 0.7091 & 0.113 \\
+FM & 50 & 0.6346$\pm$0.0069 & 17.00$\pm$0.12 & 0.7080 & 0.171 \\
+\midrule
+Shortcut & 1 & 0.6590$\pm$0.0067 & 17.27$\pm$0.12 & 0.7340 & 0.070 \\
+Shortcut & 2 & 0.6501$\pm$0.0070 & 17.15$\pm$0.13 & 0.7249 & 0.069 \\
+Shortcut & 4 & 0.6421$\pm$0.0083 & 17.06$\pm$0.15 & 0.7164 & 0.073 \\
+Shortcut & 8 & 0.6385$\pm$0.0087 & 17.02$\pm$0.16 & 0.7125 & 0.080 \\
+Shortcut & 16 & 0.6367$\pm$0.0089 & 17.01$\pm$0.16 & 0.7104 & 0.096 \\
+Shortcut & 50 & 0.6354$\pm$0.0091 & 17.00$\pm$0.16 & 0.7090 & 0.165 \\
+Shortcut & 128 & 0.6351$\pm$0.0091 & 17.00$\pm$0.16 & 0.7086 & 0.319 \\
+\bottomrule
+\end{tabular}
+\end{table}

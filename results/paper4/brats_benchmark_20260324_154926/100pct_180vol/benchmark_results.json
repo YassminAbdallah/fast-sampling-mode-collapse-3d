@@ -1,0 +1,221 @@
+{
+  "fraction": 1.0,
+  "n_volumes": 180,
+  "fm": {
+    "10": {
+      "method": "fm",
+      "steps": 10,
+      "gen_ssim": 0.546215595677495,
+      "gen_ssim_std": 0.13427977872552252,
+      "gen_psnr": 18.068789064884186,
+      "gen_psnr_std": 2.2319698549589218,
+      "time_per_vol": 0.01448330283164978,
+      "recon_ssim": 0.9030903726816177,
+      "nfe": 10
+    },
+    "25": {
+      "method": "fm",
+      "steps": 25,
+      "gen_ssim": 0.5483710207045078,
+      "gen_ssim_std": 0.08895566007904304,
+      "gen_psnr": 18.093117117881775,
+      "gen_psnr_std": 2.004733908833226,
+      "time_per_vol": 0.03195580840110779,
+      "recon_ssim": 0.9030903726816177,
+      "nfe": 25
+    },
+    "50": {
+      "method": "fm",
+      "steps": 50,
+      "gen_ssim": 0.5522228665649891,
+      "gen_ssim_std": 0.12226013200548612,
+      "gen_psnr": 18.13256275653839,
+      "gen_psnr_std": 2.1636521392944172,
+      "time_per_vol": 0.0781058669090271,
+      "recon_ssim": 0.9030903726816177,
+      "nfe": 50
+    }
+  },
+  "rectified": {
+    "5": {
+      "method": "rectified",
+      "steps": 5,
+      "gen_ssim": 0.7059293128550053,
+      "gen_ssim_std": 0.11326825797074112,
+      "gen_psnr": 18.903449535369873,
+      "gen_psnr_std": 1.8198952059087372,
+      "time_per_vol": 0.0018545091152191162,
+      "recon_ssim": 0.9030903726816177,
+      "nfe": 5
+    },
+    "10": {
+      "method": "rectified",
+      "steps": 10,
+      "gen_ssim": 0.7208252884447575,
+      "gen_ssim_std": 0.0685557543257877,
+      "gen_psnr": 19.181490421295166,
+      "gen_psnr_std": 1.6070879778064378,
+      "time_per_vol": 0.004363611340522766,
+      "recon_ssim": 0.9030903726816177,
+      "nfe": 10
+    },
+    "25": {
+      "method": "rectified",
+      "steps": 25,
+      "gen_ssim": 0.6994969844818115,
+      "gen_ssim_std": 0.07745765832714367,
+      "gen_psnr": 18.68479037284851,
+      "gen_psnr_std": 1.4715328205371847,
+      "time_per_vol": 0.03315331041812897,
+      "recon_ssim": 0.9030903726816177,
+      "nfe": 25
+    }
+  },
+  "consistency": {
+    "1": {
+      "method": "consistency",
+      "steps": 1,
+      "gen_ssim": 0.6705129705369473,
+      "gen_ssim_std": 0.09598214985425751,
+      "gen_psnr": 18.8866708278656,
+      "gen_psnr_std": 1.9427498131308696,
+      "time_per_vol": 0.0027274489402770996,
+      "recon_ssim": 0.9030903726816177,
+      "nfe": 1
+    },
+    "2": {
+      "method": "consistency",
+      "steps": 2,
+      "gen_ssim": 0.7044342532753944,
+      "gen_ssim_std": 0.09135311154712311,
+      "gen_psnr": 19.28052854537964,
+      "gen_psnr_std": 1.9507612415464897,
+      "time_per_vol": 0.00652623176574707,
+      "recon_ssim": 0.9030903726816177,
+      "nfe": 2
+    },
+    "4": {
+      "method": "consistency",
+      "steps": 4,
+      "gen_ssim": 0.7193681038916111,
+      "gen_ssim_std": 0.07808512675719366,
+      "gen_psnr": 19.38499128818512,
+      "gen_psnr_std": 1.8350360069924618,
+      "time_per_vol": 0.008055314421653748,
+      "recon_ssim": 0.9030903726816177,
+      "nfe": 4
+    },
+    "8": {
+      "method": "consistency",
+      "steps": 8,
+      "gen_ssim": 0.7488221824169159,
+      "gen_ssim_std": 0.06982500370837624,
+      "gen_psnr": 19.556766986846924,
+      "gen_psnr_std": 1.7043390216850867,
+      "time_per_vol": 0.01627229154109955,
+      "recon_ssim": 0.9030903726816177,
+      "nfe": 8
+    },
+    "16": {
+      "method": "consistency",
+      "steps": 16,
+      "gen_ssim": 0.7533428743481636,
+      "gen_ssim_std": 0.07021763904041509,
+      "gen_psnr": 19.57746410369873,
+      "gen_psnr_std": 1.6697457242658134,
+      "time_per_vol": 0.03341631591320038,
+      "recon_ssim": 0.9030903726816177,
+      "nfe": 16
+    },
+    "50": {
+      "method": "consistency",
+      "steps": 50,
+      "gen_ssim": 0.7615032456815243,
+      "gen_ssim_std": 0.07205159694820999,
+      "gen_psnr": 19.572610318660736,
+      "gen_psnr_std": 1.6113500052707748,
+      "time_per_vol": 0.09914369881153107,
+      "recon_ssim": 0.9030903726816177,
+      "nfe": 50
+    }
+  },
+  "shortcut": {
+    "1": {
+      "method": "shortcut",
+      "steps": 1,
+      "gen_ssim": 0.5425258670002222,
+      "gen_ssim_std": 0.11798387369878452,
+      "gen_psnr": 17.698806822299957,
+      "gen_psnr_std": 2.046536170831561,
+      "time_per_vol": 0.0011939555406570435,
+      "recon_ssim": 0.9030903726816177,
+      "nfe": 1
+    },
+    "2": {
+      "method": "shortcut",
+      "steps": 2,
+      "gen_ssim": 0.5431667175143957,
+      "gen_ssim_std": 0.12479105086504165,
+      "gen_psnr": 17.703356385231018,
+      "gen_psnr_std": 2.0492596400532634,
+      "time_per_vol": 0.000655055046081543,
+      "recon_ssim": 0.9030903726816177,
+      "nfe": 2
+    },
+    "4": {
+      "method": "shortcut",
+      "steps": 4,
+      "gen_ssim": 0.556320670992136,
+      "gen_ssim_std": 0.12600614101918803,
+      "gen_psnr": 17.773124516010284,
+      "gen_psnr_std": 2.0631569897962296,
+      "time_per_vol": 0.0010556727647781372,
+      "recon_ssim": 0.9030903726816177,
+      "nfe": 4
+    },
+    "8": {
+      "method": "shortcut",
+      "steps": 8,
+      "gen_ssim": 0.5262636877596378,
+      "gen_ssim_std": 0.10752416608479634,
+      "gen_psnr": 17.688637733459473,
+      "gen_psnr_std": 2.0676751928257135,
+      "time_per_vol": 0.0018283724784851074,
+      "recon_ssim": 0.9030903726816177,
+      "nfe": 8
+    },
+    "16": {
+      "method": "shortcut",
+      "steps": 16,
+      "gen_ssim": 0.5534940641373396,
+      "gen_ssim_std": 0.11577675877159191,
+      "gen_psnr": 17.75035411119461,
+      "gen_psnr_std": 2.0293126746043106,
+      "time_per_vol": 0.012967884540557861,
+      "recon_ssim": 0.9030903726816177,
+      "nfe": 16
+    },
+    "50": {
+      "method": "shortcut",
+      "steps": 50,
+      "gen_ssim": 0.528573090210557,
+      "gen_ssim_std": 0.10417687999566319,
+      "gen_psnr": 17.637204229831696,
+      "gen_psnr_std": 1.9090409243118733,
+      "time_per_vol": 0.07662224769592285,
+      "recon_ssim": 0.9030903726816177,
+      "nfe": 50
+    },
+    "128": {
+      "method": "shortcut",
+      "steps": 128,
+      "gen_ssim": 0.5404429752379656,
+      "gen_ssim_std": 0.09423865234897551,
+      "gen_psnr": 17.600462317466736,
+      "gen_psnr_std": 1.7656828215793048,
+      "time_per_vol": 0.22039243578910828,
+      "recon_ssim": 0.9030903726816177,
+      "nfe": 128
+    }
+  }
+}

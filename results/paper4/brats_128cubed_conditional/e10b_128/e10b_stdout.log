@@ -1,0 +1,295 @@
+Device: mps
+Train pool: 180 volumes; Test: 60 volumes
+
+Resuming from results/paper4/brats_128cubed_conditional/e10b_128/e10b_results_128_partial.json
+
+=== Generating synthetic pools (one-time) ===
+  Loading cached shortcut_50 pool from results/paper4/brats_128cubed_conditional/e10b_128/syn_pool_shortcut_50.pt
+  Loading cached consistency_4 pool from results/paper4/brats_128cubed_conditional/e10b_128/syn_pool_consistency_4.pt
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+
+========================================
+  FRACTION 5pct — 9 real volumes
+========================================
+  --- REAL_ONLY (all seeds valid, skipping) ---
+  --- CLASSICAL_AUG (all seeds valid, skipping) ---
+  --- SHORTCUT_50 (all seeds valid, skipping) ---
+  --- CONSISTENCY_4 (all seeds valid, skipping) ---
+
+========================================
+  FRACTION 10pct — 18 real volumes
+========================================
+  --- REAL_ONLY ---
+    Seed 42:
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+      iter     1/2000 loss=1.7058 (lr=3.00e-05, skipped_nan=0, 8s)
+      iter   500/2000 loss=0.5016 (lr=2.66e-04, skipped_nan=0, 3083s)
+      iter  1000/2000 loss=0.2156 (lr=1.61e-04, skipped_nan=0, 6028s)
+      iter  1500/2000 loss=0.0828 (lr=4.80e-05, skipped_nan=0, 9047s)
+      iter  2000/2000 loss=0.0905 (lr=0.00e+00, skipped_nan=0, 12159s)
+      → Dice 0.7718  CI95=[0.7292, 0.8129]  (12208s = 3.39h) [ok]
+      Checkpoint saved to results/paper4/brats_128cubed_conditional/e10b_128/e10b_results_128_partial.json
+    Seed 43:
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+      iter     1/2000 loss=1.2185 (lr=3.00e-05, skipped_nan=0, 6s)
+      iter   500/2000 loss=0.2784 (lr=2.66e-04, skipped_nan=0, 2937s)
+      iter  1000/2000 loss=0.1164 (lr=1.61e-04, skipped_nan=0, 5960s)
+      iter  1500/2000 loss=0.0874 (lr=4.80e-05, skipped_nan=0, 9052s)
+      iter  2000/2000 loss=0.0723 (lr=0.00e+00, skipped_nan=0, 12101s)
+      → Dice 0.7827  CI95=[0.7378, 0.8241]  (12157s = 3.38h) [ok]
+      Checkpoint saved to results/paper4/brats_128cubed_conditional/e10b_128/e10b_results_128_partial.json
+    Seed 44:
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+      iter     1/2000 loss=1.2366 (lr=3.00e-05, skipped_nan=0, 6s)
+      iter   500/2000 loss=0.2716 (lr=2.66e-04, skipped_nan=0, 3003s)
+      iter  1000/2000 loss=0.1298 (lr=1.61e-04, skipped_nan=0, 6018s)
+      iter  1500/2000 loss=0.0635 (lr=4.80e-05, skipped_nan=0, 9054s)
+      iter  2000/2000 loss=0.0630 (lr=0.00e+00, skipped_nan=0, 12102s)
+      → Dice 0.7834  CI95=[0.7420, 0.8237]  (12157s = 3.38h) [ok]
+      Checkpoint saved to results/paper4/brats_128cubed_conditional/e10b_128/e10b_results_128_partial.json
+  → 10pct/real_only: 0.7793 ± 0.0053 (over 3 valid seeds)
+  --- CLASSICAL_AUG ---
+    Seed 42:
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+      iter     1/2000 loss=1.7055 (lr=3.00e-05, skipped_nan=0, 6s)
+      iter   500/2000 loss=0.4987 (lr=2.66e-04, skipped_nan=0, 3052s)
+      iter  1000/2000 loss=0.2163 (lr=1.61e-04, skipped_nan=0, 6124s)
+      iter  1500/2000 loss=0.0824 (lr=4.80e-05, skipped_nan=0, 9203s)
+      iter  2000/2000 loss=0.0973 (lr=0.00e+00, skipped_nan=0, 12275s)
+      → Dice 0.7864  CI95=[0.7461, 0.8245]  (12330s = 3.42h) [ok]
+      Checkpoint saved to results/paper4/brats_128cubed_conditional/e10b_128/e10b_results_128_partial.json
+    Seed 43:
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+      iter     1/2000 loss=1.2194 (lr=3.00e-05, skipped_nan=0, 6s)
+      iter   500/2000 loss=0.2930 (lr=2.66e-04, skipped_nan=0, 3065s)
+      iter  1000/2000 loss=0.1245 (lr=1.61e-04, skipped_nan=0, 6105s)
+      iter  1500/2000 loss=0.0966 (lr=4.80e-05, skipped_nan=0, 9138s)
+      iter  2000/2000 loss=0.0775 (lr=0.00e+00, skipped_nan=0, 12159s)
+      → Dice 0.7756  CI95=[0.7304, 0.8173]  (12212s = 3.39h) [ok]
+      Checkpoint saved to results/paper4/brats_128cubed_conditional/e10b_128/e10b_results_128_partial.json
+    Seed 44:
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+      iter     1/2000 loss=1.2381 (lr=3.00e-05, skipped_nan=0, 6s)
+      iter   500/2000 loss=0.2800 (lr=2.66e-04, skipped_nan=0, 2942s)
+      iter  1000/2000 loss=0.1406 (lr=1.61e-04, skipped_nan=0, 5872s)
+      iter  1500/2000 loss=0.0725 (lr=4.80e-05, skipped_nan=0, 8839s)
+      iter  2000/2000 loss=0.0618 (lr=0.00e+00, skipped_nan=0, 11755s)
+      → Dice 0.7862  CI95=[0.7497, 0.8206]  (11807s = 3.28h) [ok]
+      Checkpoint saved to results/paper4/brats_128cubed_conditional/e10b_128/e10b_results_128_partial.json
+  → 10pct/classical_aug: 0.7827 ± 0.0051 (over 3 valid seeds)
+  --- SHORTCUT_50 ---
+    Pseudo-labelling 500 synthetic volumes...
+    Tumor detection rate (teacher on shortcut_50 synthetic): 100.0%
+    Seed 42:
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+      iter     1/2000 loss=1.7013 (lr=3.00e-05, skipped_nan=0, 6s)
+      iter   500/2000 loss=0.4120 (lr=2.66e-04, skipped_nan=0, 2910s)
+      iter  1000/2000 loss=0.1948 (lr=1.61e-04, skipped_nan=0, 5818s)
+      iter  1500/2000 loss=0.0637 (lr=4.80e-05, skipped_nan=0, 8738s)
+      iter  2000/2000 loss=0.0784 (lr=0.00e+00, skipped_nan=0, 11676s)
+      → Dice 0.7853  CI95=[0.7555, 0.8146]  (11727s = 3.26h) [ok]
+      Checkpoint saved to results/paper4/brats_128cubed_conditional/e10b_128/e10b_results_128_partial.json
+    Seed 43:
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+      iter     1/2000 loss=1.2210 (lr=3.00e-05, skipped_nan=0, 6s)
+      iter   500/2000 loss=0.2578 (lr=2.66e-04, skipped_nan=0, 2874s)
+      iter  1000/2000 loss=0.0858 (lr=1.61e-04, skipped_nan=0, 5755s)
+      iter  1500/2000 loss=0.0900 (lr=4.80e-05, skipped_nan=0, 8666s)
+      iter  2000/2000 loss=0.0800 (lr=0.00e+00, skipped_nan=0, 11596s)
+      → Dice 0.7796  CI95=[0.7491, 0.8100]  (11648s = 3.24h) [ok]
+      Checkpoint saved to results/paper4/brats_128cubed_conditional/e10b_128/e10b_results_128_partial.json
+    Seed 44:
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+      iter     1/2000 loss=1.2366 (lr=3.00e-05, skipped_nan=0, 6s)
+      iter   500/2000 loss=0.1902 (lr=2.66e-04, skipped_nan=0, 2907s)
+      iter  1000/2000 loss=0.1501 (lr=1.61e-04, skipped_nan=0, 5819s)
+      iter  1500/2000 loss=0.0716 (lr=4.80e-05, skipped_nan=0, 8732s)
+      iter  2000/2000 loss=0.0508 (lr=0.00e+00, skipped_nan=0, 11648s)
+      → Dice 0.7833  CI95=[0.7525, 0.8140]  (11700s = 3.25h) [ok]
+      Checkpoint saved to results/paper4/brats_128cubed_conditional/e10b_128/e10b_results_128_partial.json
+  → 10pct/shortcut_50: 0.7827 ± 0.0024 (over 3 valid seeds)
+  --- CONSISTENCY_4 ---
+    Pseudo-labelling 500 synthetic volumes...
+    Tumor detection rate (teacher on consistency_4 synthetic): 100.0%
+    Seed 42:
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+      iter     1/2000 loss=1.6963 (lr=3.00e-05, skipped_nan=0, 6s)
+      iter   500/2000 loss=0.3769 (lr=2.66e-04, skipped_nan=0, 2927s)
+      iter  1000/2000 loss=0.1667 (lr=1.61e-04, skipped_nan=0, 5830s)
+      iter  1500/2000 loss=0.1336 (lr=4.80e-05, skipped_nan=0, 8766s)
+      iter  2000/2000 loss=0.0941 (lr=0.00e+00, skipped_nan=0, 11718s)
+      → Dice 0.7706  CI95=[0.7362, 0.8034]  (11771s = 3.27h) [ok]
+      Checkpoint saved to results/paper4/brats_128cubed_conditional/e10b_128/e10b_results_128_partial.json
+    Seed 43:
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+      iter     1/2000 loss=1.2095 (lr=3.00e-05, skipped_nan=0, 6s)
+      iter   500/2000 loss=0.2936 (lr=2.66e-04, skipped_nan=0, 2974s)
+      iter  1000/2000 loss=0.1314 (lr=1.61e-04, skipped_nan=0, 5942s)
+      iter  1500/2000 loss=0.0947 (lr=4.80e-05, skipped_nan=0, 8922s)
+      iter  2000/2000 loss=0.1624 (lr=0.00e+00, skipped_nan=0, 11877s)
+      → Dice 0.7698  CI95=[0.7392, 0.8008]  (11930s = 3.31h) [ok]
+      Checkpoint saved to results/paper4/brats_128cubed_conditional/e10b_128/e10b_results_128_partial.json
+    Seed 44:
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+      iter     1/2000 loss=1.2379 (lr=3.00e-05, skipped_nan=0, 6s)
+      iter   500/2000 loss=0.2218 (lr=2.66e-04, skipped_nan=0, 2987s)
+      iter  1000/2000 loss=0.1044 (lr=1.61e-04, skipped_nan=0, 5962s)
+      iter  1500/2000 loss=0.0994 (lr=4.80e-05, skipped_nan=0, 8911s)
+      iter  2000/2000 loss=0.0815 (lr=0.00e+00, skipped_nan=0, 11905s)
+      → Dice 0.7771  CI95=[0.7458, 0.8088]  (11961s = 3.32h) [ok]
+      Checkpoint saved to results/paper4/brats_128cubed_conditional/e10b_128/e10b_results_128_partial.json
+  → 10pct/consistency_4: 0.7725 ± 0.0033 (over 3 valid seeds)
+
+========================================
+  FRACTION 25pct — 45 real volumes
+========================================
+  --- REAL_ONLY ---
+    Seed 42:
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+      iter     1/2000 loss=1.6643 (lr=3.00e-05, skipped_nan=0, 6s)
+      iter   500/2000 loss=0.3614 (lr=2.66e-04, skipped_nan=0, 2920s)
+      iter  1000/2000 loss=0.1174 (lr=1.61e-04, skipped_nan=0, 5825s)
+      iter  1500/2000 loss=0.1185 (lr=4.80e-05, skipped_nan=0, 8758s)
+      iter  2000/2000 loss=0.1106 (lr=0.00e+00, skipped_nan=0, 11695s)
+      → Dice 0.7914  CI95=[0.7590, 0.8216]  (11747s = 3.26h) [ok]
+      Checkpoint saved to results/paper4/brats_128cubed_conditional/e10b_128/e10b_results_128_partial.json
+    Seed 43:
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+      iter     1/2000 loss=1.2230 (lr=3.00e-05, skipped_nan=0, 6s)
+      iter   500/2000 loss=0.2385 (lr=2.66e-04, skipped_nan=0, 2945s)
+      iter  1000/2000 loss=0.1946 (lr=1.61e-04, skipped_nan=0, 5879s)
+      iter  1500/2000 loss=0.0922 (lr=4.80e-05, skipped_nan=0, 8816s)
+      iter  2000/2000 loss=0.0577 (lr=0.00e+00, skipped_nan=0, 11756s)
+      → Dice 0.7757  CI95=[0.7280, 0.8200]  (11808s = 3.28h) [ok]
+      Checkpoint saved to results/paper4/brats_128cubed_conditional/e10b_128/e10b_results_128_partial.json
+    Seed 44:
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+      iter     1/2000 loss=1.2434 (lr=3.00e-05, skipped_nan=0, 6s)
+      iter   500/2000 loss=0.3477 (lr=2.66e-04, skipped_nan=0, 2873s)
+      iter  1000/2000 loss=0.1512 (lr=1.61e-04, skipped_nan=0, 5727s)
+      iter  1500/2000 loss=0.1089 (lr=4.80e-05, skipped_nan=0, 8588s)
+      iter  2000/2000 loss=0.0650 (lr=0.00e+00, skipped_nan=0, 11423s)
+      → Dice 0.7905  CI95=[0.7544, 0.8224]  (11473s = 3.19h) [ok]
+      Checkpoint saved to results/paper4/brats_128cubed_conditional/e10b_128/e10b_results_128_partial.json
+  → 25pct/real_only: 0.7859 ± 0.0072 (over 3 valid seeds)
+  --- CLASSICAL_AUG ---
+    Seed 42:
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+      iter     1/2000 loss=1.6636 (lr=3.00e-05, skipped_nan=0, 6s)
+      iter   500/2000 loss=0.3701 (lr=2.66e-04, skipped_nan=0, 2848s)
+      iter  1000/2000 loss=0.1408 (lr=1.61e-04, skipped_nan=0, 5738s)
+      iter  1500/2000 loss=0.1776 (lr=4.80e-05, skipped_nan=0, 8641s)
+      iter  2000/2000 loss=0.1265 (lr=0.00e+00, skipped_nan=0, 11575s)
+      → Dice 0.7765  CI95=[0.7332, 0.8158]  (11627s = 3.23h) [ok]
+      Checkpoint saved to results/paper4/brats_128cubed_conditional/e10b_128/e10b_results_128_partial.json
+    Seed 43:
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+      iter     1/2000 loss=1.2239 (lr=3.00e-05, skipped_nan=0, 6s)
+      iter   500/2000 loss=0.2498 (lr=2.66e-04, skipped_nan=0, 2897s)
+      iter  1000/2000 loss=0.2054 (lr=1.61e-04, skipped_nan=0, 5795s)
+      iter  1500/2000 loss=0.1056 (lr=4.80e-05, skipped_nan=0, 8780s)
+      iter  2000/2000 loss=0.0610 (lr=0.00e+00, skipped_nan=0, 11742s)
+      → Dice 0.7945  CI95=[0.7581, 0.8269]  (11793s = 3.28h) [ok]
+      Checkpoint saved to results/paper4/brats_128cubed_conditional/e10b_128/e10b_results_128_partial.json
+    Seed 44:
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+      iter     1/2000 loss=1.2438 (lr=3.00e-05, skipped_nan=0, 6s)
+      iter   500/2000 loss=0.3385 (lr=2.66e-04, skipped_nan=0, 2930s)
+      iter  1000/2000 loss=0.1715 (lr=1.61e-04, skipped_nan=0, 5862s)
+      iter  1500/2000 loss=0.1175 (lr=4.80e-05, skipped_nan=0, 8805s)
+      iter  2000/2000 loss=0.0638 (lr=0.00e+00, skipped_nan=0, 11721s)
+      → Dice 0.7994  CI95=[0.7717, 0.8261]  (11772s = 3.27h) [ok]
+      Checkpoint saved to results/paper4/brats_128cubed_conditional/e10b_128/e10b_results_128_partial.json
+  → 25pct/classical_aug: 0.7901 ± 0.0098 (over 3 valid seeds)
+  --- SHORTCUT_50 ---
+    Pseudo-labelling 500 synthetic volumes...
+    Tumor detection rate (teacher on shortcut_50 synthetic): 100.0%
+    Seed 42:
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+      iter     1/2000 loss=1.6885 (lr=3.00e-05, skipped_nan=0, 6s)
+      iter   500/2000 loss=0.3294 (lr=2.66e-04, skipped_nan=0, 2939s)
+      iter  1000/2000 loss=0.1822 (lr=1.61e-04, skipped_nan=0, 5865s)
+      iter  1500/2000 loss=0.0859 (lr=4.80e-05, skipped_nan=0, 8788s)
+      iter  2000/2000 loss=0.0446 (lr=0.00e+00, skipped_nan=0, 11735s)
+      → Dice 0.7886  CI95=[0.7586, 0.8185]  (11787s = 3.27h) [ok]
+      Checkpoint saved to results/paper4/brats_128cubed_conditional/e10b_128/e10b_results_128_partial.json
+    Seed 43:
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+      iter     1/2000 loss=1.2191 (lr=3.00e-05, skipped_nan=0, 6s)
+      iter   500/2000 loss=0.2968 (lr=2.66e-04, skipped_nan=0, 2963s)
+      iter  1000/2000 loss=0.0801 (lr=1.61e-04, skipped_nan=0, 5879s)
+      iter  1500/2000 loss=0.0836 (lr=4.80e-05, skipped_nan=0, 8760s)
+      iter  2000/2000 loss=0.0581 (lr=0.00e+00, skipped_nan=0, 11637s)
+      → Dice 0.7781  CI95=[0.7462, 0.8092]  (11688s = 3.25h) [ok]
+      Checkpoint saved to results/paper4/brats_128cubed_conditional/e10b_128/e10b_results_128_partial.json
+    Seed 44:
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+      iter     1/2000 loss=1.2451 (lr=3.00e-05, skipped_nan=0, 6s)
+      iter   500/2000 loss=0.1934 (lr=2.66e-04, skipped_nan=0, 2884s)
+      iter  1000/2000 loss=0.0806 (lr=1.61e-04, skipped_nan=0, 5771s)
+      iter  1500/2000 loss=0.0904 (lr=4.80e-05, skipped_nan=0, 8671s)
+      iter  2000/2000 loss=0.0701 (lr=0.00e+00, skipped_nan=0, 11569s)
+      → Dice 0.7842  CI95=[0.7545, 0.8154]  (11621s = 3.23h) [ok]
+      Checkpoint saved to results/paper4/brats_128cubed_conditional/e10b_128/e10b_results_128_partial.json
+  → 25pct/shortcut_50: 0.7836 ± 0.0043 (over 3 valid seeds)
+  --- CONSISTENCY_4 ---
+    Pseudo-labelling 500 synthetic volumes...
+    Tumor detection rate (teacher on consistency_4 synthetic): 100.0%
+    Seed 42:
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+      iter     1/2000 loss=1.7101 (lr=3.00e-05, skipped_nan=0, 6s)
+      iter   500/2000 loss=0.4377 (lr=2.66e-04, skipped_nan=0, 2896s)
+      iter  1000/2000 loss=0.2345 (lr=1.61e-04, skipped_nan=0, 5847s)
+      iter  1500/2000 loss=0.1796 (lr=4.80e-05, skipped_nan=0, 8717s)
+      iter  2000/2000 loss=0.1376 (lr=0.00e+00, skipped_nan=0, 11700s)
+      → Dice 0.7753  CI95=[0.7429, 0.8073]  (11753s = 3.26h) [ok]
+      Checkpoint saved to results/paper4/brats_128cubed_conditional/e10b_128/e10b_results_128_partial.json
+    Seed 43:
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+      iter     1/2000 loss=1.2083 (lr=3.00e-05, skipped_nan=0, 6s)
+      iter   500/2000 loss=0.3839 (lr=2.66e-04, skipped_nan=0, 3096s)
+      iter  1000/2000 loss=0.1055 (lr=1.61e-04, skipped_nan=0, 6116s)
+      iter  1500/2000 loss=0.1158 (lr=4.80e-05, skipped_nan=0, 9131s)
+      iter  2000/2000 loss=0.0766 (lr=0.00e+00, skipped_nan=0, 12100s)
+      → Dice 0.7747  CI95=[0.7429, 0.8066]  (12151s = 3.38h) [ok]
+      Checkpoint saved to results/paper4/brats_128cubed_conditional/e10b_128/e10b_results_128_partial.json
+    Seed 44:
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+      iter     1/2000 loss=1.2421 (lr=3.00e-05, skipped_nan=0, 6s)
+      iter   500/2000 loss=0.3079 (lr=2.66e-04, skipped_nan=0, 2969s)
+      iter  1000/2000 loss=0.1097 (lr=1.61e-04, skipped_nan=0, 5979s)
+      iter  1500/2000 loss=0.0935 (lr=4.80e-05, skipped_nan=0, 9083s)
+      iter  2000/2000 loss=0.0660 (lr=0.00e+00, skipped_nan=0, 12095s)
+      → Dice 0.7784  CI95=[0.7483, 0.8087]  (12148s = 3.37h) [ok]
+      Checkpoint saved to results/paper4/brats_128cubed_conditional/e10b_128/e10b_results_128_partial.json
+  → 25pct/consistency_4: 0.7761 ± 0.0016 (over 3 valid seeds)
+
+Saved results/paper4/brats_128cubed_conditional/e10b_128/e10b_results_128.json
+
+================================================================================
+  128³ E10b summary (max_iters=2000, n_seeds=3)
+================================================================================
+  Fraction        Condition           Dice ± std    n valid
+      5pct        real_only     0.7497 ± 0.0066          3
+      5pct    classical_aug     0.7564 ± 0.0154          3
+      5pct      shortcut_50     0.7825 ± 0.0047          3
+      5pct    consistency_4     0.7742 ± 0.0029          3
+     10pct        real_only     0.7793 ± 0.0053          3
+     10pct    classical_aug     0.7827 ± 0.0051          3
+     10pct      shortcut_50     0.7827 ± 0.0024          3
+     10pct    consistency_4     0.7725 ± 0.0033          3
+     25pct        real_only     0.7859 ± 0.0072          3
+     25pct    classical_aug     0.7901 ± 0.0098          3
+     25pct      shortcut_50     0.7836 ± 0.0043          3
+     25pct    consistency_4     0.7761 ± 0.0016          3
+
+Paired t-tests vs real_only (uncorrected, within each fraction):
+     5pct    classical_aug vs real_only: t= -0.764  p=0.5248  ΔDice=+0.0066
+  *  5pct      shortcut_50 vs real_only: t= -4.313  p=0.04978  ΔDice=+0.0327
+     5pct    consistency_4 vs real_only: t= -3.661  p=0.06718  ΔDice=+0.0245
+    10pct    classical_aug vs real_only: t= -0.543  p=0.6415  ΔDice=+0.0034
+    10pct      shortcut_50 vs real_only: t= -0.664  p=0.5751  ΔDice=+0.0034
+    10pct    consistency_4 vs real_only: t=  1.987  p=0.1853  ΔDice=-0.0068
+    25pct    classical_aug vs real_only: t= -0.427  p=0.7108  ΔDice=+0.0043
+    25pct      shortcut_50 vs real_only: t=  0.887  p=0.4688  ΔDice=-0.0022
+    25pct    consistency_4 vs real_only: t=  2.156  p=0.1639  ΔDice=-0.0097

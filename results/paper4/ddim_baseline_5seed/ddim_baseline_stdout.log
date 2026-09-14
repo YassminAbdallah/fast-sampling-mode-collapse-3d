@@ -1,0 +1,48 @@
+Device: mps
+Dataset: brats (BraTS 2023 (300 glioma volumes, T2-FLAIR))
+Data:      data/brats_preprocessed_64.pt
+VQ-GAN:    results/paper3/brats_benchmark_20260221_193306/100pct_300vol/phase1_shared.pt
+DDPM ckpt: results/paper3/brats_benchmark_20260221_193306/100pct_300vol/ddpm/final.pt
+Loaded 300 real volumes
+Real data diversity (n=64): 0.0451
+
+Running DDIM-50 on brats, 64 samples × 5 seeds
+  seed=42: SSIM=0.6357  PSNR=15.14  div=0.0817  (0.193s/vol, 12s total)
+  seed=123: SSIM=0.6240  PSNR=15.05  div=0.0830  (0.165s/vol, 11s total)
+  seed=456: SSIM=0.6412  PSNR=15.30  div=0.0709  (0.166s/vol, 11s total)
+  seed=789: SSIM=0.6410  PSNR=15.36  div=0.0744  (0.168s/vol, 11s total)
+  seed=1337: SSIM=0.6053  PSNR=14.67  div=0.0938  (0.162s/vol, 10s total)
+
+================================================================
+  DDIM-50 — brats — 5-seed headline
+================================================================
+  SSIM      = 0.6295 ± 0.0152  [0.6162, 0.6400]
+  PSNR      = 15.10 ± 0.27  dB
+  Diversity = 0.0807 ± 0.0089  (178.9% of real)
+  Time      = 0.171 s/vol
+
+Saved results/paper4/ddim_baseline_5seed/brats_ddim50.json
+Device: mps
+Dataset: ixi (IXI (200 healthy volumes))
+Data:      data/ixi_preprocessed_64.pt
+VQ-GAN:    results/paper3/ixi_benchmark_20260221_045741/100pct_200vol/phase1_shared.pt
+DDPM ckpt: results/paper3/ixi_benchmark_20260221_045741/100pct_200vol/ddpm/final.pt
+Loaded 200 real volumes
+Real data diversity (n=64): 0.0793
+
+Running DDIM-50 on ixi, 64 samples × 5 seeds
+  seed=42: SSIM=0.2349  PSNR=12.88  div=0.1939  (0.178s/vol, 11s total)
+  seed=123: SSIM=0.2355  PSNR=12.96  div=0.1895  (0.164s/vol, 10s total)
+  seed=456: SSIM=0.2376  PSNR=13.00  div=0.1865  (0.163s/vol, 10s total)
+  seed=789: SSIM=0.2411  PSNR=13.00  div=0.1858  (0.163s/vol, 10s total)
+  seed=1337: SSIM=0.2277  PSNR=12.78  div=0.1962  (0.170s/vol, 11s total)
+
+================================================================
+  DDIM-50 — ixi — 5-seed headline
+================================================================
+  SSIM      = 0.2354 ± 0.0049  [0.2311, 0.2389]
+  PSNR      = 12.92 ± 0.09  dB
+  Diversity = 0.1904 ± 0.0046  (240.2% of real)
+  Time      = 0.168 s/vol
+
+Saved results/paper4/ddim_baseline_5seed/ixi_ddim50.json

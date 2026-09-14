@@ -1,0 +1,32 @@
+Device: mps
+Variant: ema_l2  (EMA target + L2 loss             (Cell A: schedule-matched retrain))
+VQ-GAN:    results/paper4/brats_benchmark_20260324_154926/100pct_180vol/phase1_shared.pt
+FM teacher:results/paper4/brats_benchmark_20260324_154926/100pct_180vol/fm/final.pt
+Loaded 300 volumes, shape (300, 1, 64, 64, 64)
+Loaded labels, unique values: [0, 1]
+Training: 180 volumes, batch 4, 45 iters/epoch
+
+============================================================
+2x2 FACTORIAL — variant 'ema_l2' — 80 epochs
+============================================================
+  EMA target enabled (decay=0.999)
+  [  1/80] ema_l2=0.002305 N=3 | 5.7s
+  [  5/80] ema_l2=0.000281 N=11 | 3.7s
+  [ 10/80] ema_l2=0.000138 N=20 | 3.7s
+  [ 15/80] ema_l2=0.000196 N=29 | 3.7s
+  [ 20/80] ema_l2=0.000020 N=39 | 3.7s
+  [ 25/80] ema_l2=0.000010 N=48 | 3.7s
+  [ 30/80] ema_l2=0.000044 N=57 | 3.7s
+  [ 35/80] ema_l2=0.000007 N=66 | 3.7s
+  [ 40/80] ema_l2=0.000044 N=76 | 3.7s
+  [ 45/80] ema_l2=0.000003 N=85 | 3.7s
+  [ 50/80] ema_l2=0.000002 N=94 | 3.7s
+  [ 55/80] ema_l2=0.000002 N=103 | 3.8s
+  [ 60/80] ema_l2=0.000001 N=113 | 4.4s
+  [ 65/80] ema_l2=0.000002 N=122 | 5.0s
+  [ 70/80] ema_l2=0.000001 N=131 | 6.0s
+  [ 75/80] ema_l2=0.000001 N=140 | 5.4s
+  [ 80/80] ema_l2=0.000001 N=150 | 4.8s
+
+Saved results/paper4/cd_2x2/ema_l2/final.pt
+Saved training log: results/paper4/cd_2x2/training_log_ema_l2.json

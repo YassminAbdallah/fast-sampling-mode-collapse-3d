@@ -1,0 +1,38 @@
+Device: mps
+Train (train+val): 240 volumes
+Test:              60 volumes
+
+--- Seed 0 (seed=42) ---
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+    iter     1/5000  loss=1.7067  test_dice@8=0.0230
+    iter   200/5000  loss=0.3450  test_dice@8=0.7816
+    iter   400/5000  loss=0.1386  test_dice@8=0.7827
+    iter   600/5000  loss=0.1417  test_dice@8=0.7935
+    iter   800/5000  loss=0.1658  test_dice@8=0.8087
+    iter  1000/5000  loss=0.1946  test_dice@8=0.7958
+    iter  1200/5000  loss=0.0745  test_dice@8=0.7999
+    iter  1400/5000  loss=0.1095  test_dice@8=0.8237
+    iter  1600/5000  loss=0.0905  test_dice@8=0.8097
+    iter  1800/5000  loss=0.1139  test_dice@8=0.8274
+    iter  2000/5000  loss=0.1071  test_dice@8=0.8113
+    iter  2200/5000  loss=0.0868  test_dice@8=0.8190
+    iter  2400/5000  loss=0.1197  test_dice@8=0.8215
+    iter  2600/5000  loss=0.1346  test_dice@8=0.0000
+    iter  2800/5000  loss=0.0620  test_dice@8=0.8150
+    iter  3000/5000  loss=0.0846  test_dice@8=0.8257
+    iter  3200/5000  loss=0.0873  test_dice@8=0.8189
+    iter  3400/5000  loss=0.0737  test_dice@8=0.8273
+    iter  3600/5000  loss=0.1095  test_dice@8=0.8286
+    iter  3800/5000  loss=0.0778  test_dice@8=0.8262
+    iter  4000/5000  loss=0.0958  test_dice@8=0.8245
+    iter  4200/5000  loss=0.0891  test_dice@8=0.8259
+    iter  4400/5000  loss=0.1457  test_dice@8=0.8231
+    iter  4600/5000  loss=0.0989  test_dice@8=0.8267
+    iter  4800/5000  loss=0.0858  test_dice@8=0.8267
+    iter  5000/5000  loss=0.1478  test_dice@8=0.8268
+  Final test Dice: 0.8013  (82163s)
+  → New best teacher (Dice 0.8013)
+
+--- Seed 1 (seed=43) ---
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+    iter     1/5000  loss=1.2144  test_dice@8=0.0977

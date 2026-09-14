@@ -1,0 +1,494 @@
+{
+  "FM@50": {
+    "1": {
+      "precision_mean": 0.53125,
+      "precision_std": 0.02209708691207961,
+      "recall_mean": 0.22,
+      "recall_std": 0.040824829046386304,
+      "precision_seeds": [
+        0.515625,
+        0.515625,
+        0.5625
+      ],
+      "recall_seeds": [
+        0.27,
+        0.22,
+        0.17
+      ]
+    },
+    "3": {
+      "precision_mean": 0.8020833333333334,
+      "precision_std": 0.02655739329996242,
+      "recall_mean": 0.5233333333333333,
+      "recall_std": 0.05137011669140812,
+      "precision_seeds": [
+        0.8125,
+        0.828125,
+        0.765625
+      ],
+      "recall_seeds": [
+        0.59,
+        0.515,
+        0.465
+      ]
+    },
+    "5": {
+      "precision_mean": 0.8541666666666666,
+      "precision_std": 0.01473139127471974,
+      "recall_mean": 0.69,
+      "recall_std": 0.04262237284181473,
+      "precision_seeds": [
+        0.84375,
+        0.875,
+        0.84375
+      ],
+      "recall_seeds": [
+        0.725,
+        0.715,
+        0.63
+      ]
+    },
+    "7": {
+      "precision_mean": 0.90625,
+      "precision_std": 0.0,
+      "recall_mean": 0.7666666666666666,
+      "recall_std": 0.04714045207910321,
+      "precision_seeds": [
+        0.90625,
+        0.90625,
+        0.90625
+      ],
+      "recall_seeds": [
+        0.8,
+        0.8,
+        0.7
+      ]
+    },
+    "10": {
+      "precision_mean": 0.9375,
+      "precision_std": 0.02551551815399144,
+      "recall_mean": 0.8250000000000001,
+      "recall_std": 0.039370039370059035,
+      "precision_seeds": [
+        0.96875,
+        0.90625,
+        0.9375
+      ],
+      "recall_seeds": [
+        0.845,
+        0.86,
+        0.77
+      ]
+    }
+  },
+  "Shortcut@4": {
+    "1": {
+      "precision_mean": 0.4479166666666667,
+      "precision_std": 0.04480377743251368,
+      "recall_mean": 0.105,
+      "recall_std": 0.034880749227427246,
+      "precision_seeds": [
+        0.390625,
+        0.453125,
+        0.5
+      ],
+      "recall_seeds": [
+        0.15,
+        0.065,
+        0.1
+      ]
+    },
+    "3": {
+      "precision_mean": 0.7135416666666666,
+      "precision_std": 0.03897559777889522,
+      "recall_mean": 0.30000000000000004,
+      "recall_std": 0.020412414523193145,
+      "precision_seeds": [
+        0.671875,
+        0.703125,
+        0.765625
+      ],
+      "recall_seeds": [
+        0.325,
+        0.275,
+        0.3
+      ]
+    },
+    "5": {
+      "precision_mean": 0.7708333333333334,
+      "precision_std": 0.01473139127471974,
+      "recall_mean": 0.4533333333333333,
+      "recall_std": 0.012472191289246459,
+      "precision_seeds": [
+        0.75,
+        0.78125,
+        0.78125
+      ],
+      "recall_seeds": [
+        0.47,
+        0.45,
+        0.44
+      ]
+    },
+    "7": {
+      "precision_mean": 0.8177083333333334,
+      "precision_std": 0.00736569563735987,
+      "recall_mean": 0.5750000000000001,
+      "recall_std": 0.035355339059327355,
+      "precision_seeds": [
+        0.8125,
+        0.828125,
+        0.8125
+      ],
+      "recall_seeds": [
+        0.55,
+        0.625,
+        0.55
+      ]
+    },
+    "10": {
+      "precision_mean": 0.875,
+      "precision_std": 0.03375385780420761,
+      "recall_mean": 0.6683333333333333,
+      "recall_std": 0.032998316455372205,
+      "precision_seeds": [
+        0.828125,
+        0.890625,
+        0.90625
+      ],
+      "recall_seeds": [
+        0.625,
+        0.705,
+        0.675
+      ]
+    }
+  },
+  "Shortcut@128": {
+    "1": {
+      "precision_mean": 0.40625,
+      "precision_std": 0.02209708691207961,
+      "recall_mean": 0.18166666666666664,
+      "recall_std": 0.056617625838210096,
+      "precision_seeds": [
+        0.390625,
+        0.390625,
+        0.4375
+      ],
+      "recall_seeds": [
+        0.24,
+        0.105,
+        0.2
+      ]
+    },
+    "3": {
+      "precision_mean": 0.7291666666666666,
+      "precision_std": 0.04830009633070679,
+      "recall_mean": 0.43166666666666664,
+      "recall_std": 0.010274023338281637,
+      "precision_seeds": [
+        0.703125,
+        0.6875,
+        0.796875
+      ],
+      "recall_seeds": [
+        0.43,
+        0.42,
+        0.445
+      ]
+    },
+    "5": {
+      "precision_mean": 0.8125,
+      "precision_std": 0.05560978256266308,
+      "recall_mean": 0.5983333333333333,
+      "recall_std": 0.006236095644623242,
+      "precision_seeds": [
+        0.765625,
+        0.78125,
+        0.890625
+      ],
+      "recall_seeds": [
+        0.59,
+        0.605,
+        0.6
+      ]
+    },
+    "7": {
+      "precision_mean": 0.8697916666666666,
+      "precision_std": 0.02655739329996242,
+      "recall_mean": 0.7116666666666666,
+      "recall_std": 0.014337208778404392,
+      "precision_seeds": [
+        0.84375,
+        0.859375,
+        0.90625
+      ],
+      "recall_seeds": [
+        0.695,
+        0.73,
+        0.71
+      ]
+    },
+    "10": {
+      "precision_mean": 0.9010416666666666,
+      "precision_std": 0.01473139127471974,
+      "recall_mean": 0.7799999999999999,
+      "recall_std": 0.008164965809277268,
+      "precision_seeds": [
+        0.890625,
+        0.890625,
+        0.921875
+      ],
+      "recall_seeds": [
+        0.78,
+        0.79,
+        0.77
+      ]
+    }
+  },
+  "Consistency@1": {
+    "1": {
+      "precision_mean": 0.2760416666666667,
+      "precision_std": 0.04480377743251368,
+      "recall_mean": 0.0,
+      "recall_std": 0.0,
+      "precision_seeds": [
+        0.328125,
+        0.21875,
+        0.28125
+      ],
+      "recall_seeds": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "3": {
+      "precision_mean": 0.3645833333333333,
+      "precision_std": 0.06029081720203242,
+      "recall_mean": 0.0,
+      "recall_std": 0.0,
+      "precision_seeds": [
+        0.421875,
+        0.28125,
+        0.390625
+      ],
+      "recall_seeds": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "5": {
+      "precision_mean": 0.5208333333333334,
+      "precision_std": 0.06421264586426018,
+      "recall_mean": 0.0,
+      "recall_std": 0.0,
+      "precision_seeds": [
+        0.59375,
+        0.4375,
+        0.53125
+      ],
+      "recall_seeds": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "7": {
+      "precision_mean": 0.5833333333333334,
+      "precision_std": 0.09403890669410306,
+      "recall_mean": 0.0,
+      "recall_std": 0.0,
+      "precision_seeds": [
+        0.671875,
+        0.453125,
+        0.625
+      ],
+      "recall_seeds": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "10": {
+      "precision_mean": 0.640625,
+      "precision_std": 0.08930431353897003,
+      "recall_mean": 0.0,
+      "recall_std": 0.0,
+      "precision_seeds": [
+        0.71875,
+        0.515625,
+        0.6875
+      ],
+      "recall_seeds": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "Consistency@4": {
+    "1": {
+      "precision_mean": 0.09895833333333333,
+      "precision_std": 0.02946278254943948,
+      "recall_mean": 0.0,
+      "recall_std": 0.0,
+      "precision_seeds": [
+        0.140625,
+        0.078125,
+        0.078125
+      ],
+      "recall_seeds": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "3": {
+      "precision_mean": 0.6822916666666666,
+      "precision_std": 0.07254368894366729,
+      "recall_mean": 0.0,
+      "recall_std": 0.0,
+      "precision_seeds": [
+        0.609375,
+        0.65625,
+        0.78125
+      ],
+      "recall_seeds": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "5": {
+      "precision_mean": 0.8541666666666666,
+      "precision_std": 0.05311478659992484,
+      "recall_mean": 0.0,
+      "recall_std": 0.0,
+      "precision_seeds": [
+        0.78125,
+        0.875,
+        0.90625
+      ],
+      "recall_seeds": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "7": {
+      "precision_mean": 0.96875,
+      "precision_std": 0.02551551815399144,
+      "recall_mean": 0.0,
+      "recall_std": 0.0,
+      "precision_seeds": [
+        0.9375,
+        0.96875,
+        1.0
+      ],
+      "recall_seeds": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "10": {
+      "precision_mean": 0.9947916666666666,
+      "precision_std": 0.00736569563735987,
+      "recall_mean": 0.0,
+      "recall_std": 0.0,
+      "precision_seeds": [
+        0.984375,
+        1.0,
+        1.0
+      ],
+      "recall_seeds": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "Consistency@50": {
+    "1": {
+      "precision_mean": 0.8229166666666666,
+      "precision_std": 0.01948779888944761,
+      "recall_mean": 0.0,
+      "recall_std": 0.0,
+      "precision_seeds": [
+        0.796875,
+        0.828125,
+        0.84375
+      ],
+      "recall_seeds": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "3": {
+      "precision_mean": 1.0,
+      "precision_std": 0.0,
+      "recall_mean": 0.0,
+      "recall_std": 0.0,
+      "precision_seeds": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "recall_seeds": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "5": {
+      "precision_mean": 1.0,
+      "precision_std": 0.0,
+      "recall_mean": 0.0,
+      "recall_std": 0.0,
+      "precision_seeds": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "recall_seeds": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "7": {
+      "precision_mean": 1.0,
+      "precision_std": 0.0,
+      "recall_mean": 0.0,
+      "recall_std": 0.0,
+      "precision_seeds": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "recall_seeds": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "10": {
+      "precision_mean": 1.0,
+      "precision_std": 0.0,
+      "recall_mean": 0.0,
+      "recall_std": 0.0,
+      "precision_seeds": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "recall_seeds": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+}

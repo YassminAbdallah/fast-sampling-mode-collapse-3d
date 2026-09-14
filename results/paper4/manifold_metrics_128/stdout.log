@@ -1,0 +1,33 @@
+  device: mps
+  real: 128 volumes @ (128, 128, 128)
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+  teacher feature dim: 2048   real diversity: 0.05157
+    consistency  seed   42  P=0.609 R=0.000 D=0.234 C=0.109 | VQ-space R=0.000
+    consistency  seed  123  P=0.547 R=0.000 D=0.269 C=0.109 | VQ-space R=0.000
+    consistency  seed  456  P=0.500 R=0.109 D=0.219 C=0.117 | VQ-space R=0.000
+    consistency  seed  789  P=0.672 R=0.023 D=0.350 C=0.141 | VQ-space R=0.000
+    consistency  seed 1337  P=0.531 R=0.000 D=0.231 C=0.102 | VQ-space R=0.000
+    shortcut     seed   42  P=0.688 R=0.773 D=0.584 C=0.641 | VQ-space R=0.188
+    shortcut     seed  123  P=0.734 R=0.844 D=0.662 C=0.633 | VQ-space R=0.203
+    shortcut     seed  456  P=0.719 R=0.836 D=0.725 C=0.656 | VQ-space R=0.312
+    shortcut     seed  789  P=0.812 R=0.805 D=0.659 C=0.586 | VQ-space R=0.172
+    shortcut     seed 1337  P=0.672 R=0.844 D=0.522 C=0.570 | VQ-space R=0.180
+    fm           seed   42  P=0.750 R=0.727 D=0.644 C=0.570 | VQ-space R=0.164
+    fm           seed  123  P=0.766 R=0.859 D=0.684 C=0.586 | VQ-space R=0.266
+    fm           seed  456  P=0.812 R=0.805 D=0.878 C=0.758 | VQ-space R=0.273
+    fm           seed  789  P=0.781 R=0.672 D=0.725 C=0.625 | VQ-space R=0.156
+    fm           seed 1337  P=0.688 R=0.820 D=0.503 C=0.453 | VQ-space R=0.141
+
+==========================================================================
+  128-CUBED, TASK-INDEPENDENT TEACHER SPACE
+==========================================================================
+  method         Precision   Recall  Coverage  Div %real
+  consistency        0.572    0.027     0.116      15.2%
+  shortcut           0.725    0.820     0.617      73.0%
+  fm                 0.759    0.777     0.598      72.8%
+
+  For comparison, the 64-cubed result (BraTS):
+    consistency    Recall = 0.000   |   shortcut/fm/rectified/ddpm = 0.52 to 0.73
+
+
+  written: results/paper4/manifold_metrics_128/manifold_metrics_128.json

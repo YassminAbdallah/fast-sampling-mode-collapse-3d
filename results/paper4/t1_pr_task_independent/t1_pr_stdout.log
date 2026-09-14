@@ -1,0 +1,281 @@
+Device: mps
+Loading task-independent feature extractor (teacher segmenter):
+  results/paper4/paper4/e7_teacher/teacher_best.pt
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+  Bottleneck forward hook registered on model.down_4.
+
+============================================================
+  BRATS × consistency @ NFE=50
+============================================================
+    Loading VQ-GAN from 100pct_300vol/phase1_shared.pt
+    Loading consistency generator from 100pct_300vol/consistency/final.pt
+Device: mps
+
+============================================================
+  BRATS × consistency @ NFE=50
+============================================================
+    [step 1/2] Loading VQ-GAN + consistency generator
+    [step 1/2] Loading real dataset brats_preprocessed_64.pt
+      seed=  42: sampled 64 real + 64 gen
+      seed= 123: sampled 64 real + 64 gen
+      seed= 456: sampled 64 real + 64 gen
+      seed= 789: sampled 64 real + 64 gen
+      seed=1337: sampled 64 real + 64 gen
+    [step 2/2] Loading teacher & extracting task-independent features
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+Device: mps
+
+============================================================
+  BRATS × consistency @ NFE=50
+============================================================
+    [step 1/2] Loading VQ-GAN + consistency generator
+    [step 1/2] Loading real dataset brats_preprocessed_64.pt
+      seed=  42: sampled 64 real + 64 gen
+      seed= 123: sampled 64 real + 64 gen
+      seed= 456: sampled 64 real + 64 gen
+      seed= 789: sampled 64 real + 64 gen
+      seed=1337: sampled 64 real + 64 gen
+    [step 2/2] Loading teacher on CPU & extracting features
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+Device: mps
+Loading task-independent feature extractor (teacher segmenter) on CPU:
+  results/paper4/paper4/e7_teacher/teacher_best.pt
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+  Teacher loaded (CPU); encoder path will be traversed manually.
+
+============================================================
+  BRATS × consistency @ NFE=50
+============================================================
+    [step 1/2] Loading VQ-GAN + consistency generator
+    [step 1/2] Loading real dataset brats_preprocessed_64.pt
+      seed=  42: sampled 64 real + 64 gen
+      seed= 123: sampled 64 real + 64 gen
+      seed= 456: sampled 64 real + 64 gen
+      seed= 789: sampled 64 real + 64 gen
+      seed=1337: sampled 64 real + 64 gen
+    [step 2/2] Extracting task-independent features (CPU teacher)
+Device: mps
+Loading task-independent feature extractor (teacher segmenter) on CPU:
+  results/paper4/paper4/e7_teacher/teacher_best.pt
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+  Teacher loaded (CPU); encoder path will be traversed manually.
+
+============================================================
+  BRATS × consistency @ NFE=50
+============================================================
+    [step 1/2] Loading VQ-GAN + consistency generator
+    [step 1/2] Loading real dataset brats_preprocessed_64.pt
+      seed=  42: sampled 64 real + 64 gen
+      seed= 123: sampled 64 real + 64 gen
+      seed= 456: sampled 64 real + 64 gen
+      seed= 789: sampled 64 real + 64 gen
+      seed=1337: sampled 64 real + 64 gen
+    [step 2/2] Extracting task-independent features (CPU teacher)
+        batch 1/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 2/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 3/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 4/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 5/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 6/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 7/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 8/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 9/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 10/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 11/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 12/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 13/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 14/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 15/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 16/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 17/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 18/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 19/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 20/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 21/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 22/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 23/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 24/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 25/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 26/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 27/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 28/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 29/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 30/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 31/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 32/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 1/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 2/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 3/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 4/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 5/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 6/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 7/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 8/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 9/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 10/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 11/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 12/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 13/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 14/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 15/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 16/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 17/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 18/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 19/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 20/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 21/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 22/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 23/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 24/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 25/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 26/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 27/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 28/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 29/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 30/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 31/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+        batch 32/32: x shape=(2, 1, 64, 64, 64) dtype=torch.float32 device=cpu
+Device: mps
+Loading task-independent feature extractor (teacher segmenter) on CPU:
+  results/paper4/paper4/e7_teacher/teacher_best.pt
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+  Teacher loaded (CPU); encoder path will be traversed manually.
+
+============================================================
+  BRATS × consistency @ NFE=50
+============================================================
+    [step 1/2] Loading VQ-GAN + consistency generator
+    [step 1/2] Loading real dataset brats_preprocessed_64.pt
+      seed=  42: sampled 64 real + 64 gen
+      seed= 123: sampled 64 real + 64 gen
+      seed= 456: sampled 64 real + 64 gen
+      seed= 789: sampled 64 real + 64 gen
+      seed=1337: sampled 64 real + 64 gen
+    [step 2/2] Extracting task-independent features (CPU teacher)
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.395, 5.37]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.323, 5.03]
+Device: mps
+Loading task-independent feature extractor (teacher segmenter) on CPU:
+  results/paper4/paper4/e7_teacher/teacher_best.pt
+BasicUNet features: (32, 64, 128, 256, 32, 32).
+  Teacher loaded (CPU); encoder path will be traversed manually.
+
+============================================================
+  BRATS × consistency @ NFE=50
+============================================================
+    [step 1/2] Loading VQ-GAN + consistency generator
+    [step 1/2] Loading real dataset brats_preprocessed_64.pt
+      seed=  42: sampled 64 real + 64 gen
+      seed= 123: sampled 64 real + 64 gen
+      seed= 456: sampled 64 real + 64 gen
+      seed= 789: sampled 64 real + 64 gen
+      seed=1337: sampled 64 real + 64 gen
+    [step 2/2] Extracting task-independent features (CPU teacher)
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.395, 5.37]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.323, 5.03]
+      seed=  42: P=1.000  R=0.0000  D=0.656  C=0.109
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.35, 5.43]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.323, 5.03]
+      seed= 123: P=1.000  R=0.0000  D=1.106  C=0.141
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.399, 5.46]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.324, 5.02]
+      seed= 456: P=1.000  R=0.0000  D=1.341  C=0.156
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.374, 5.46]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.324, 5.03]
+      seed= 789: P=1.000  R=0.0000  D=0.997  C=0.141
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.374, 5.37]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.323, 5.02]
+      seed=1337: P=1.000  R=0.0000  D=0.775  C=0.078
+
+============================================================
+  BRATS × shortcut @ NFE=50
+============================================================
+    [step 1/2] Loading VQ-GAN + shortcut generator
+    [step 1/2] Loading real dataset brats_preprocessed_64.pt
+      seed=  42: sampled 64 real + 64 gen
+      seed= 123: sampled 64 real + 64 gen
+      seed= 456: sampled 64 real + 64 gen
+      seed= 789: sampled 64 real + 64 gen
+      seed=1337: sampled 64 real + 64 gen
+    [step 2/2] Extracting task-independent features (CPU teacher)
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.395, 5.37]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.368, 5.52]
+      seed=  42: P=0.734  R=0.5000  D=1.166  C=0.938
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.35, 5.43]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.373, 5.37]
+      seed= 123: P=0.875  R=0.6406  D=1.150  C=0.984
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.399, 5.46]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.37, 5.52]
+      seed= 456: P=0.844  R=0.6562  D=1.250  C=0.922
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.374, 5.46]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.345, 5.44]
+      seed= 789: P=0.906  R=0.5625  D=1.394  C=0.953
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.374, 5.37]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.356, 5.26]
+      seed=1337: P=0.859  R=0.6250  D=1.150  C=0.922
+
+============================================================
+  IXI × consistency @ NFE=50
+============================================================
+    [step 1/2] Loading VQ-GAN + consistency generator
+    [step 1/2] Loading real dataset ixi_preprocessed_64.pt
+      seed=  42: sampled 64 real + 64 gen
+      seed= 123: sampled 64 real + 64 gen
+      seed= 456: sampled 64 real + 64 gen
+      seed= 789: sampled 64 real + 64 gen
+      seed=1337: sampled 64 real + 64 gen
+    [step 2/2] Extracting task-independent features (CPU teacher)
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.386, 5.53]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.334, 4.67]
+      seed=  42: P=0.984  R=0.0000  D=1.266  C=0.188
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.376, 5.53]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.334, 4.69]
+      seed= 123: P=0.984  R=0.0000  D=1.041  C=0.188
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.374, 5.59]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.333, 4.68]
+      seed= 456: P=1.000  R=0.0000  D=1.159  C=0.156
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.386, 5.4]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.334, 4.68]
+      seed= 789: P=0.984  R=0.0000  D=1.522  C=0.234
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.383, 5.41]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.335, 4.67]
+      seed=1337: P=1.000  R=0.0000  D=1.812  C=0.250
+
+============================================================
+  IXI × shortcut @ NFE=50
+============================================================
+    [step 1/2] Loading VQ-GAN + shortcut generator
+    [step 1/2] Loading real dataset ixi_preprocessed_64.pt
+      seed=  42: sampled 64 real + 64 gen
+      seed= 123: sampled 64 real + 64 gen
+      seed= 456: sampled 64 real + 64 gen
+      seed= 789: sampled 64 real + 64 gen
+      seed=1337: sampled 64 real + 64 gen
+    [step 2/2] Extracting task-independent features (CPU teacher)
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.386, 5.53]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.371, 5.25]
+      seed=  42: P=0.875  R=0.7812  D=1.175  C=0.922
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.376, 5.53]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.369, 5.46]
+      seed= 123: P=0.734  R=0.6406  D=1.003  C=0.984
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.374, 5.59]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.364, 5.36]
+      seed= 456: P=0.828  R=0.6875  D=0.978  C=0.844
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.386, 5.4]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.372, 5.63]
+      seed= 789: P=0.781  R=0.6250  D=1.100  C=0.969
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.383, 5.41]
+        features: shape=(64, 2048) nan=0 inf=0 range=[-0.369, 5.45]
+      seed=1337: P=0.828  R=0.9062  D=1.050  C=0.984
+
+Saved results/paper4/t1_pr_task_independent/t1_pr_results.json
+
+============================================================
+  T1 headline (task-independent teacher-encoder features)
+============================================================
+  dataset  method              Precision           Recall          Density         Coverage
+  ------------------------------------------------------------------------------------
+  brats    consistency    1.000 ± 0.000   0.0000 ± 0.0000    0.975 ± 0.271    0.125 ± 0.031
+  brats    shortcut       0.844 ± 0.065   0.5969 ± 0.0648    1.222 ± 0.105    0.944 ± 0.026
+  ixi      consistency    0.991 ± 0.009   0.0000 ± 0.0000    1.360 ± 0.309    0.203 ± 0.038
+  ixi      shortcut       0.809 ± 0.053   0.7281 ± 0.1167    1.061 ± 0.079    0.941 ± 0.060

@@ -1,0 +1,149 @@
+[
+  {
+    "comparison": "shortcut@1 vs consistency@1",
+    "metric": "diversity",
+    "shortcut@1_mean": 0.011668526032747376,
+    "consistency@1_mean": 0.006911372574182997,
+    "shortcut@1_95ci": [
+      0.011397254310404174,
+      0.011935451445132788
+    ],
+    "consistency@1_95ci": [
+      0.006815557220316906,
+      0.007005886280574717
+    ],
+    "test_statistic": 0.004757153458564379,
+    "p_value": 2.398970470529298e-06,
+    "cohens_d": 18.107065333449135,
+    "significant_005": true,
+    "significant_001": true,
+    "n_seeds": 5,
+    "claim": "Shortcut@1 vs Consistency@1"
+  },
+  {
+    "comparison": "shortcut@4 vs consistency@4",
+    "metric": "diversity",
+    "shortcut@4_mean": 0.022188063967596032,
+    "consistency@4_mean": 0.0026992257743023358,
+    "shortcut@4_95ci": [
+      0.021558317421456905,
+      0.02278604559269586
+    ],
+    "consistency@4_95ci": [
+      0.0026519232399651728,
+      0.0027405677212444723
+    ],
+    "test_statistic": 0.019488838193293695,
+    "p_value": 5.078137011787425e-07,
+    "cohens_d": 34.509746831119045,
+    "significant_005": true,
+    "significant_001": true,
+    "n_seeds": 5,
+    "claim": "Shortcut@4 vs Consistency@4"
+  },
+  {
+    "comparison": "shortcut@4 vs fm@50",
+    "metric": "diversity",
+    "shortcut@4_mean": 0.022188063967596032,
+    "fm@50_mean": 0.02583489968166095,
+    "shortcut@4_95ci": [
+      0.0215583174214569,
+      0.02278604559269586
+    ],
+    "fm@50_95ci": [
+      0.02535043866050223,
+      0.026350871908398976
+    ],
+    "test_statistic": -0.003646835714064923,
+    "p_value": 0.0002238258595679699,
+    "cohens_d": -5.047561888172551,
+    "significant_005": true,
+    "significant_001": true,
+    "n_seeds": 5,
+    "claim": "Shortcut@4 vs FM@50"
+  },
+  {
+    "comparison": "shortcut@128 vs fm@50",
+    "metric": "ssim",
+    "shortcut@128_mean": 0.7713591501116752,
+    "fm@50_mean": 0.7713619807735086,
+    "shortcut@128_95ci": [
+      0.769286048412323,
+      0.7732611652463675
+    ],
+    "fm@50_95ci": [
+      0.769331898726523,
+      0.7729353915899992
+    ],
+    "test_statistic": -2.8306618332862855e-06,
+    "p_value": 0.9943319823064024,
+    "cohens_d": -0.001150941681688898,
+    "significant_005": false,
+    "significant_001": false,
+    "n_seeds": 5,
+    "claim": "Shortcut@128 vs FM@50 (convergence)"
+  },
+  {
+    "comparison": "shortcut@1 vs fm@10",
+    "metric": "ssim",
+    "shortcut@1_mean": 0.7793562144041062,
+    "fm@10_mean": 0.7735101906582713,
+    "shortcut@1_95ci": [
+      0.7780764633789659,
+      0.7804421721026301
+    ],
+    "fm@10_95ci": [
+      0.7715730544179678,
+      0.7750844202935696
+    ],
+    "test_statistic": 0.005846023745834828,
+    "p_value": 0.0001286383600852509,
+    "cohens_d": 3.0425503805280547,
+    "significant_005": true,
+    "significant_001": true,
+    "n_seeds": 5,
+    "claim": "Shortcut@1 vs FM@10"
+  },
+  {
+    "comparison": "consistency@1 vs consistency@50",
+    "metric": "diversity",
+    "consistency@1_mean": 0.006911372574182997,
+    "consistency@50_mean": 0.0011173439451672563,
+    "consistency@1_95ci": [
+      0.006815557220316906,
+      0.007005886280574717
+    ],
+    "consistency@50_95ci": [
+      0.0011070464188032065,
+      0.0011282150537197826
+    ],
+    "test_statistic": 0.005794028629015739,
+    "p_value": 4.842787790314227e-08,
+    "cohens_d": 65.16185228635769,
+    "significant_005": true,
+    "significant_001": true,
+    "n_seeds": 5,
+    "claim": "Consistency@1 vs @50 (collapse)"
+  },
+  {
+    "comparison": "shortcut@4 vs consistency@4",
+    "metric": "ssim",
+    "shortcut@4_mean": 0.7753463495522738,
+    "consistency@4_mean": 0.7858203791081906,
+    "shortcut@4_95ci": [
+      0.7732120780274272,
+      0.7772694358602166
+    ],
+    "consistency@4_95ci": [
+      0.7857479361817241,
+      0.7858736554160715
+    ],
+    "test_statistic": -0.010474029555916786,
+    "p_value": 0.0010557699838332057,
+    "cohens_d": -5.4919103389833435,
+    "significant_005": true,
+    "significant_001": true,
+    "n_seeds": 5,
+    "claim": "Shortcut@4 vs Consistency@4 quality"
+  }
+]

@@ -1,0 +1,7 @@
+Variant                             | 1-step SSIM | 1-step %Real | 128-step %Real
+--------------------------------------------------------------------------------
+shortcut (full, SC=0.25)            | 0.7788      | 31%          | 68%
+shortcut_no_curriculum              | 0.7806      | 32%          | 70%
+shortcut_sc0.00                     | 0.7831      | 20%          | 69%
+shortcut_sc0.10                     | 0.7815      | 28%          | 71%
+shortcut_sc0.50                     | 0.7733      | 47%          | 68%

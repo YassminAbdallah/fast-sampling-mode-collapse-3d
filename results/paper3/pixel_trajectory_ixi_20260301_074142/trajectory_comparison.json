@@ -1,0 +1,17 @@
+{
+  "pixel_space": {
+    "straightness_mean": 0.9946208000183105,
+    "straightness_std": 0.0003084882046096027,
+    "max_curvature_mean": 0.03183585777878761,
+    "max_curvature_std": 0.0010390296811237931,
+    "n_trajectories": 16
+  },
+  "latent_space": {
+    "straightness_mean": 0.9853901863098145,
+    "straightness_std": 0.0016355984844267368,
+    "max_curvature_mean": 0.06243925169110298,
+    "max_curvature_std": 0.0037345841992646456,
+    "n_trajectories": 16
+  },
+  "dataset": "ixi"
+}
